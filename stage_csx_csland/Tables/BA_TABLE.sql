@@ -1,0 +1,27 @@
+﻿CREATE TABLE [stage_csx_csland].[BA_TABLE] (
+    [PRIMARY_KEY]       CHAR (6)       NOT NULL,
+    [FILE_STATUS]       CHAR (10)      NOT NULL,
+    [ALTERNATE_CODE]    CHAR (6)       NOT NULL,
+    [NAME]              VARCHAR (40)   NOT NULL,
+    [ADDRESS_LINE_1]    VARCHAR (40)   NULL,
+    [ADDRESS_LINE_2]    VARCHAR (40)   NULL,
+    [ADDRESS_LINE_3]    VARCHAR (40)   NULL,
+    [ADDRESS_LINE_4]    VARCHAR (40)   NULL,
+    [ADDRESS_LINE_5]    VARCHAR (40)   NULL,
+    [SHORT_NAME]        CHAR (15)      NOT NULL,
+    [CONTACT_NAME]      VARCHAR (20)   NULL,
+    [PHONE_NUMBER]      VARCHAR (12)   NULL,
+    [E_MAIL_ADDRESS]    VARCHAR (40)   NULL,
+    [FAX_NUMBER]        VARCHAR (12)   NULL,
+    [MAIL_FLAGS]        VARCHAR (10)   NULL,
+    [SIN_NUMBER]        VARCHAR (12)   NULL,
+    [COMBINE_RENTAL]    VARCHAR (1)    NULL,
+    [MIN_CHEQUE_AMOUNT] NUMERIC (9, 2) NULL,
+    [BANK_FEE]          NUMERIC (9, 2) NULL,
+    [CURRENCY_COUNTRY]  CHAR (10)      NULL,
+    [WTAX_COUNTRY]      CHAR (10)      NULL,
+    [GST_REG_NO]        VARCHAR (10)   NULL,
+    [SAP_CODE]          VARCHAR (10)   NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

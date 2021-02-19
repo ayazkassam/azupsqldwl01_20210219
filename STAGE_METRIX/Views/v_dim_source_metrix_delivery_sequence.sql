@@ -1,0 +1,3 @@
+﻿CREATE VIEW [STAGE_METRIX].[v_dim_source_metrix_delivery_sequence]
+AS SELECT DISTINCT cast(DELIVERY_SEQUENCE as varchar(10)) delivery_sequence
+FROM [STAGE_METRIX_METRIX].MARKET_MASTER_DISPOSITIONS;

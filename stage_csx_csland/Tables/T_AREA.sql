@@ -1,0 +1,19 @@
+﻿CREATE TABLE [stage_csx_csland].[T_AREA] (
+    [CODE]             CHAR (10)    NOT NULL,
+    [NAME]             VARCHAR (40) NOT NULL,
+    [PROVINCE]         CHAR (10)    NOT NULL,
+    [PLAT_SCALE]       VARCHAR (2)  NULL,
+    [SURVEY_SYSTEM]    VARCHAR (1)  NULL,
+    [TL_CORNER]        VARCHAR (20) NULL,
+    [BR_CORNER]        VARCHAR (20) NULL,
+    [AI_STATUS]        VARCHAR (1)  NOT NULL,
+    [LAST_UPDATE_USER] VARCHAR (20) NULL,
+    [LAST_UPDATE_DATE] DATE         NULL,
+    [CODE_IN_USE]      NUMERIC (1)  NULL,
+    [RESERVED]         NUMERIC (1)  NULL,
+    [DIVISION]         CHAR (10)    NULL,
+    [COST_CENTER]      VARCHAR (16) NULL,
+    [AFE_NUMBER]       VARCHAR (16) NULL
+)
+WITH (CLUSTERED COLUMNSTORE INDEX, DISTRIBUTION = ROUND_ROBIN);
+

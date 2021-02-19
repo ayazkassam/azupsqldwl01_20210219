@@ -1,0 +1,11 @@
+﻿CREATE TABLE [stage].[t_qbyte_account_group_rollups] (
+    [CREATE_DATE]            DATETIME     NULL,
+    [CREATE_USER]            VARCHAR (30) NULL,
+    [ACCT_GROUP_TYPE_CODE]   VARCHAR (6)  NULL,
+    [ROLLUP_ACCT_GROUP_CODE] VARCHAR (6)  NULL,
+    [ACCT_GROUP_CODE]        VARCHAR (6)  NULL,
+    [LAST_UPDATE_USER]       VARCHAR (30) NULL,
+    [LAST_UPDATE_DATE]       DATETIME     NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

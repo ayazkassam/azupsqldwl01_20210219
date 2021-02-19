@@ -1,0 +1,32 @@
+﻿CREATE TABLE [stage].[t_ihs_well_node] (
+    [NODE_ID]            VARCHAR (20)    NOT NULL,
+    [ACTIVE_IND]         VARCHAR (1)     NULL,
+    [COORDINATE_QUALITY] VARCHAR (20)    NULL,
+    [COORD_SYSTEM_ID]    VARCHAR (20)    NULL,
+    [EFFECTIVE_DATE]     DATETIME        NULL,
+    [EXPIRY_DATE]        DATETIME        NULL,
+    [LATITUDE]           NUMERIC (12, 7) NULL,
+    [LEGAL_SURVEY_TYPE]  VARCHAR (20)    NULL,
+    [LOCATION_QUALITY]   VARCHAR (20)    NULL,
+    [LOCATION_TYPE]      VARCHAR (20)    NULL,
+    [LONGITUDE]          NUMERIC (12, 7) NULL,
+    [NODE_NUMERIC_ID]    NUMERIC (12)    NULL,
+    [NODE_POSITION]      VARCHAR (20)    NULL,
+    [ORIGINAL_OBS_NO]    NUMERIC (8)     NULL,
+    [ORIGINAL_XY_UOM]    VARCHAR (20)    NULL,
+    [PLATFORM_ID]        VARCHAR (20)    NULL,
+    [PLATFORM_SF_TYPE]   VARCHAR (24)    NULL,
+    [PPDM_GUID]          VARCHAR (38)    NULL,
+    [PREFERRED_IND]      VARCHAR (1)     NULL,
+    [REMARK]             VARCHAR (2000)  NULL,
+    [SELECTED_OBS_NO]    NUMERIC (8)     NULL,
+    [SOURCE]             VARCHAR (20)    NULL,
+    [UWI]                VARCHAR (20)    NULL,
+    [ROW_CHANGED_BY]     VARCHAR (30)    NULL,
+    [ROW_CHANGED_DATE]   DATETIME        NULL,
+    [ROW_CREATED_BY]     VARCHAR (30)    NULL,
+    [ROW_CREATED_DATE]   DATETIME        NULL,
+    [ROW_QUALITY]        VARCHAR (20)    NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

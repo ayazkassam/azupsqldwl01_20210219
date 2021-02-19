@@ -1,0 +1,11 @@
+﻿CREATE TABLE [stage].[t_qbyte_provinces] (
+    [CODE]             VARCHAR (2)     NULL,
+    [COUNTRY_CODE]     VARCHAR (2)     NULL,
+    [NAME]             VARCHAR (40)    NULL,
+    [AC_TO_HA_FACTOR]  NUMERIC (15, 6) NULL,
+    [HA_TO_AC_FACTOR]  NUMERIC (15, 6) NULL,
+    [PROVINCE_COMMENT] VARCHAR (300)   NULL,
+    [FORMATION_BA_ID]  NUMERIC (10)    NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

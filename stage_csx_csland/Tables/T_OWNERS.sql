@@ -1,0 +1,16 @@
+﻿CREATE TABLE [stage_csx_csland].[T_OWNERS] (
+    [OWNER]            CHAR (6)     NOT NULL,
+    [NAME]             VARCHAR (40) NOT NULL,
+    [CALCULATE_NETS]   VARCHAR (1)  NOT NULL,
+    [CHEQUE_RUN]       VARCHAR (1)  NULL,
+    [CHEQUE_OWNER]     CHAR (6)     NULL,
+    [RUAINV_RUN]       VARCHAR (1)  NULL,
+    [RUAINV_OWNER]     CHAR (6)     NULL,
+    [AI_STATUS]        VARCHAR (1)  NOT NULL,
+    [LAST_UPDATE_USER] VARCHAR (20) NULL,
+    [LAST_UPDATE_DATE] DATE         NULL,
+    [CODE_IN_USE]      NUMERIC (1)  NULL,
+    [RESERVED]         NUMERIC (1)  NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

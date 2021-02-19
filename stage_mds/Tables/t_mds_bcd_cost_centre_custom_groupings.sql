@@ -1,0 +1,31 @@
+﻿CREATE TABLE [stage_mds].[t_mds_bcd_cost_centre_custom_groupings] (
+    [ID]                   INT              NOT NULL,
+    [MUID]                 UNIQUEIDENTIFIER NOT NULL,
+    [VersionName]          NVARCHAR (50)    NOT NULL,
+    [VersionNumber]        INT              NOT NULL,
+    [Version_ID]           INT              NOT NULL,
+    [VersionFlag]          NVARCHAR (50)    NULL,
+    [Name]                 NVARCHAR (250)   NULL,
+    [Code]                 NVARCHAR (250)   NOT NULL,
+    [ChangeTrackingMask]   INT              NOT NULL,
+    [Cost Centre Type]     NVARCHAR (100)   NULL,
+    [Group1]               NVARCHAR (100)   NULL,
+    [Group2]               NVARCHAR (100)   NULL,
+    [Group3]               NVARCHAR (100)   NULL,
+    [Group4]               NVARCHAR (100)   NULL,
+    [Group5]               NVARCHAR (100)   NULL,
+    [Group6]               NVARCHAR (100)   NULL,
+    [Group7]               NVARCHAR (100)   NULL,
+    [Group8]               NVARCHAR (100)   NULL,
+    [Group9]               NVARCHAR (100)   NULL,
+    [Group10]              NVARCHAR (100)   NULL,
+    [EnterDateTime]        DATETIME2 (3)    NOT NULL,
+    [EnterUserName]        NVARCHAR (100)   NULL,
+    [EnterVersionNumber]   INT              NULL,
+    [LastChgDateTime]      DATETIME2 (3)    NOT NULL,
+    [LastChgUserName]      NVARCHAR (100)   NULL,
+    [LastChgVersionNumber] INT              NULL,
+    [ValidationStatus]     NVARCHAR (250)   NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

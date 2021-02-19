@@ -1,0 +1,10 @@
+﻿CREATE TABLE [stage].[t_qbyte_udf_codes] (
+    [CODE]             VARCHAR (30) NULL,
+    [UDF_TYPE_CODE]    VARCHAR (30) NULL,
+    [DESCRIPTION]      VARCHAR (80) NULL,
+    [CREATE_USER]      VARCHAR (30) NULL,
+    [CREATE_DATE]      DATETIME     NULL,
+    [LAST_UPDATE_USER] VARCHAR (30) NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

@@ -1,0 +1,31 @@
+﻿CREATE TABLE [stage].[t_wellview_wvt_wvjobafe] (
+    [idwell]            VARCHAR (32)   NOT NULL,
+    [idrecparent]       VARCHAR (32)   NULL,
+    [idrec]             VARCHAR (32)   NOT NULL,
+    [afenumber]         VARCHAR (50)   NULL,
+    [afenumbersupp]     VARCHAR (50)   NULL,
+    [afestatus]         VARCHAR (50)   NULL,
+    [com]               VARCHAR (2000) NULL,
+    [costtyp]           VARCHAR (100)  NULL,
+    [dttmafe]           DATETIME       NULL,
+    [dttmafeclose]      DATETIME       NULL,
+    [exclude]           SMALLINT       NULL,
+    [projectname]       VARCHAR (50)   NULL,
+    [projectrefnumber]  VARCHAR (100)  NULL,
+    [typ]               VARCHAR (100)  NULL,
+    [workingint]        FLOAT (53)     NULL,
+    [workingintnote]    VARCHAR (255)  NULL,
+    [sysseq]            INT            NULL,
+    [syslockmeui]       SMALLINT       NULL,
+    [syslockchildrenui] SMALLINT       NULL,
+    [syslockme]         SMALLINT       NULL,
+    [syslockchildren]   SMALLINT       NULL,
+    [syslockdate]       DATETIME       NULL,
+    [sysmoddate]        DATETIME       NULL,
+    [sysmoduser]        VARCHAR (50)   NULL,
+    [syscreatedate]     DATETIME       NULL,
+    [syscreateuser]     VARCHAR (50)   NULL,
+    [systag]            VARCHAR (255)  NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

@@ -1,0 +1,9 @@
+﻿CREATE TABLE [stage_valnav].[t_reserves_ent_custom_field] (
+    [PARENT_ID]     NVARCHAR (50) NOT NULL,
+    [USER_FIELD_ID] NVARCHAR (50) NOT NULL,
+    [STRING_VALUE]  NVARCHAR (50) NULL,
+    [NUMERIC_VALUE] FLOAT (53)    NULL,
+    [DATE_VALUE]    DATETIME2 (7) NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

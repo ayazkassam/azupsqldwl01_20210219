@@ -1,0 +1,11 @@
+﻿CREATE TABLE [stage].[t_afenav_lut_afe_type] (
+    [DOCUMENT_ID]  NVARCHAR (50) NOT NULL,
+    [VERSION]      INT           NOT NULL,
+    [ACTIVE]       TINYINT       NOT NULL,
+    [CODE_NUM]     INT           NOT NULL,
+    [OTHER_VALUE1] NVARCHAR (50) NULL,
+    [OTHER_VALUE2] NVARCHAR (50) NULL,
+    [VALUE]        NVARCHAR (50) NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

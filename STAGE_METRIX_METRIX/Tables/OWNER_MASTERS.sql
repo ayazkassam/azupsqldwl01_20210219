@@ -1,0 +1,31 @@
+﻿CREATE TABLE [STAGE_METRIX_METRIX].[OWNER_MASTERS] (
+    [CREATE_USER]                  VARCHAR (30)   NULL,
+    [CREATE_PROGRAM]               VARCHAR (120)  NULL,
+    [CREATE_DATE_TIME]             DATETIME2 (7)  NULL,
+    [LAST_UPDATE_USER]             VARCHAR (30)   NULL,
+    [LAST_UPDATE_PROGRAM]          VARCHAR (120)  NULL,
+    [LAST_UPDATE_DATE_TIME]        DATETIME2 (7)  NULL,
+    [LAST_UPDATE_AUDIT_ID]         NUMERIC (18)   NULL,
+    [VERSION]                      NUMERIC (18)   NULL,
+    [SYS_ID]                       NUMERIC (18)   NULL,
+    [PRODUCTION_DATE]              NUMERIC (18)   NULL,
+    [NAME]                         VARCHAR (40)   NULL,
+    [ADDRESS_LINE1]                VARCHAR (30)   NULL,
+    [ADDRESS_LINE2]                VARCHAR (30)   NULL,
+    [ADDRESS_LINE3]                VARCHAR (30)   NULL,
+    [ADDRESS_LINE4]                VARCHAR (30)   NULL,
+    [POSTAL_CODE]                  VARCHAR (12)   NULL,
+    [PHONE_NUMBER]                 VARCHAR (12)   NULL,
+    [FAX_NUMBER]                   VARCHAR (12)   NULL,
+    [CONTACT_NAME]                 VARCHAR (60)   NULL,
+    [USER_DEFINED1]                VARCHAR (16)   NULL,
+    [NRT_APPLICABLE]               VARCHAR (1)    NULL,
+    [NRT_RATE_OVERRIDE]            NUMERIC (6, 3) NULL,
+    [OWNER_ID]                     VARCHAR (16)   NULL,
+    [JIBLINK_PROVINCE_CODE]        VARCHAR (2)    NULL,
+    [JIBLINK_COUNTRY_CODE]         VARCHAR (2)    NULL,
+    [BC08_REPORTING_OWNER_ID]      VARCHAR (16)   NULL,
+    [GLOBAL_OBLIGATION_PAYOR_FLAG] VARCHAR (1)    NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

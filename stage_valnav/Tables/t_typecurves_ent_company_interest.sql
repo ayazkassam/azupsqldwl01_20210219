@@ -1,0 +1,7 @@
+﻿CREATE TABLE [stage_valnav].[t_typecurves_ent_company_interest] (
+    [OBJECT_ID]  NVARCHAR (50) NOT NULL,
+    [PARENT_ID]  NVARCHAR (50) NOT NULL,
+    [COMPANY_ID] NVARCHAR (50) NOT NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

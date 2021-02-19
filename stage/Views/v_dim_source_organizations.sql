@@ -1,0 +1,26 @@
+﻿CREATE VIEW [stage].[v_dim_source_organizations]
+AS select cast(o.org_id as int) AS organization_id,
+	o.org_type_code AS organization_type_code,
+	concat(o.org_name, ' (' + cast(o.org_id as varchar(10))+ ')') aS organization_name,
+	o.op_curr_code AS operating_currency_code,
+	o.reporting_curr_code AS reporting_currency_code,
+	o.create_date AS create_date,
+	ltrim(rtrim (o.create_user)) AS create_user,
+	o.last_updt_date AS last_update_date,
+	ltrim(rtrim (o.last_updt_user)) AS last_update_user,
+	o.fiscal_year_end AS fiscal_year_end,
+	o.tax_code AS tax_code,
+	o.gst_reg_num AS gst_registration_number,
+	o.term_date AS termination_date,
+	o.term_user AS termination_user,
+	o.profile_group_code AS profile_group_code,
+	o.non_standard_volume_entry_flag AS non_standard_volume_entry_flag,
+	o.self_sustaining_flag AS self_sustaining_flag,
+	o.admin_cc_num AS admin_cost_centre,
+	o.multi_tier_jib_flag AS multi_tier_jib_flag,
+	o.cash_call_draw_down_flag AS cash_call_draw_down_flag,
+	cast(o.jib_invc_org_id as varchar(6)) AS jib_invoice_org_id,
+	NULL AS country_for_taxation,
+	CASE WHEN ltrim(rtrim (o.org_name)) = ltrim(rtrim (ba.name_1)) THEN 'Y' ELSE 'N' END AS is_ba_matching_entry
+from stage.t_qbyte_organizations o
+left outer join stage.t_qbyte_business_associates ba on o.org_id = ba.id;

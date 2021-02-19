@@ -1,0 +1,1236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>AZUPSQLDW01</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{5919eb78-785a-4ca1-87d3-fd448c5c60d8}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlDwDatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>AZUPSQLDW01</RootNamespace>
+    <AssemblyName>AZUPSQLDW01</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <QueryStoreCaptureMode>None</QueryStoreCaptureMode>
+    <QueryStoreDesiredState>Off</QueryStoreDesiredState>
+    <QueryStoreFlushInterval>0</QueryStoreFlushInterval>
+    <QueryStoreStatsInterval>0</QueryStoreStatsInterval>
+    <QueryStoreMaxPlansPerQuery>0</QueryStoreMaxPlansPerQuery>
+    <QueryStoreStaleQueryThreshold>0</QueryStoreStaleQueryThreshold>
+    <QueryStoreMaxStorageSize>0</QueryStoreMaxStorageSize>
+    <DbScopedConfigLegacyCardinalityEstimation>Off</DbScopedConfigLegacyCardinalityEstimation>
+    <DbScopedConfigLegacyCardinalityEstimationSecondary>Off</DbScopedConfigLegacyCardinalityEstimationSecondary>
+    <DbScopedConfigMaxDOP>0</DbScopedConfigMaxDOP>
+    <DbScopedConfigMaxDOPSecondary>0</DbScopedConfigMaxDOPSecondary>
+    <DbScopedConfigParameterSniffing>Off</DbScopedConfigParameterSniffing>
+    <DbScopedConfigParameterSniffingSecondary>Off</DbScopedConfigParameterSniffingSecondary>
+    <DbScopedConfigOptimizerHotfixes>Off</DbScopedConfigOptimizerHotfixes>
+    <DbScopedConfigOptimizerHotfixesSecondary>Off</DbScopedConfigOptimizerHotfixesSecondary>
+    <DelayedDurability>DISABLED</DelayedDurability>
+    <AutoCreateStatisticsIncremental>False</AutoCreateStatisticsIncremental>
+    <MemoryOptimizedElevateToSnapshot>False</MemoryOptimizedElevateToSnapshot>
+    <Containment>None</Containment>
+    <IsNestedTriggersOn>True</IsNestedTriggersOn>
+    <IsTransformNoiseWordsOn>False</IsTransformNoiseWordsOn>
+    <TwoDigitYearCutoff>2049</TwoDigitYearCutoff>
+    <NonTransactedFileStreamAccess>OFF</NonTransactedFileStreamAccess>
+    <TargetRecoveryTimePeriod>60</TargetRecoveryTimePeriod>
+    <TargetRecoveryTimeUnit>SECONDS</TargetRecoveryTimeUnit>
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>False</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>0</ChangeTrackingRetentionPeriod>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>NONE</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>False</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <CompatibilityMode>130</CompatibilityMode>
+    <AnsiNullDefault>True</AnsiNullDefault>
+    <AnsiNulls>True</AnsiNulls>
+    <AnsiPadding>True</AnsiPadding>
+    <AnsiWarnings>True</AnsiWarnings>
+    <ArithAbort>True</ArithAbort>
+    <ConcatNullYieldsNull>True</ConcatNullYieldsNull>
+    <QuotedIdentifier>True</QuotedIdentifier>
+    <NumericRoundAbort>True</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DatabaseState>ONLINE</DatabaseState>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>GLOBAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>False</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>SIMPLE</Recovery>
+    <EnableFullTextSearch>False</EnableFullTextSearch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="stage_valnav\" />
+    <Folder Include="stage_valnav\Tables\" />
+    <Folder Include="STAGE_METRIX_METRIX\" />
+    <Folder Include="STAGE_METRIX_METRIX\Tables\" />
+    <Folder Include="pv30_prodcopy\" />
+    <Folder Include="pv30_prodcopy\Tables\" />
+    <Folder Include="stage\" />
+    <Folder Include="stage\Tables\" />
+    <Folder Include="data_mart\" />
+    <Folder Include="data_mart\Tables\" />
+    <Folder Include="STAGE_METRIX\" />
+    <Folder Include="STAGE_METRIX\Tables\" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="stage_prodview\" />
+    <Folder Include="stage_prodview\Tables\" />
+    <Folder Include="stage_csx_csland\" />
+    <Folder Include="stage_csx_csland\Tables\" />
+    <Folder Include="Stage_CashReceipts\" />
+    <Folder Include="Stage_CashReceipts\Tables\" />
+    <Folder Include="data_mart_metrix\" />
+    <Folder Include="data_mart_metrix\Tables\" />
+    <Folder Include="stage_ihs\" />
+    <Folder Include="stage_ihs\Tables\" />
+    <Folder Include="stage_mds\" />
+    <Folder Include="stage_mds\Tables\" />
+    <Folder Include="datamart_marketing\" />
+    <Folder Include="datamart_marketing\Tables\" />
+    <Folder Include="Mktg_ReportLoads\" />
+    <Folder Include="Mktg_ReportLoads\Tables\" />
+    <Folder Include="OLAPControl\" />
+    <Folder Include="OLAPControl\Tables\" />
+    <Folder Include="stage\Views\" />
+    <Folder Include="STAGE_METRIX\Views\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="stage_export\" />
+    <Folder Include="stage_export\Views\" />
+    <Folder Include="stage_valnav\Views\" />
+    <Folder Include="data_mart_metrix\Views\" />
+    <Folder Include="stage_ihs\Views\" />
+    <Folder Include="datamart_marketing\Views\" />
+    <Folder Include="stage_csx\" />
+    <Folder Include="stage_csx\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="stage\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="stage\Stored Procedures\" />
+    <Folder Include="data_mart\Stored Procedures\" />
+    <Folder Include="data_mart_metrix\Stored Procedures\" />
+    <Folder Include="Stage_CashReceipts\Stored Procedures\" />
+    <Folder Include="maintenance\" />
+    <Folder Include="maintenance\Stored Procedures\" />
+    <Folder Include="datamart_marketing\Stored Procedures\" />
+    <Folder Include="Mktg_ReportLoads\Stored Procedures\" />
+    <Folder Include="OLAPControl\Stored Procedures\" />
+    <Folder Include="stage_ihs\Stored Procedures\" />
+    <Folder Include="stage_prodview\Stored Procedures\" />
+    <Folder Include="External Resources\" />
+    <Folder Include="dbo\External Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="stage_valnav\Tables\t_budget_ent_capital_estimate.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\INDIAN_ROYALTY_ENTITIES.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitcompstatus.sql" />
+    <Build Include="stage\Tables\t_build_dim_account_finance.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_forecast_input.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\ENTITY_TYPES.sql" />
+    <Build Include="stage\Tables\t_prodview_downtime_hours_volumes_incr.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvflownetheader.sql" />
+    <Build Include="stage\Tables\t_build_dim_account_hierarchy.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_custom_field_def.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\TRACTS.sql" />
+    <Build Include="stage\Tables\t_qbyte_account_groups.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitnode.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_ent_plan.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\INJECTION_MASTERS.sql" />
+    <Build Include="stage\Tables\t_qbyte_account_group_accounts.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvroutesetroute.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_other_forecast.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\FC_EXPENSE_INCOME_REPORTS.sql" />
+    <Build Include="stage\Tables\t_ihs_pden_prod_zone.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitcompdowntm.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_manual_forecast_value.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\GGS_FACILITIES.sql" />
+    <Build Include="stage\Tables\t_ctrl_prodview_duplicates.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitcomp.sql" />
+    <Build Include="stage_valnav\Tables\t_reserves_ent_custom_field.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\FC_CALC_FORMULA_DETAILS.sql" />
+    <Build Include="stage\Tables\t_stg_type_curves_current_scenario.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitcompwhcut.sql" />
+    <Build Include="stage_valnav\Tables\t_reserves_results_btax_product.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\ROYALTY_CALC_FORMULA_DETAILS.sql" />
+    <Build Include="stage\Tables\t_prodview_bsw.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitcompgathmonthdaycalc_incr.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_decline.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\MARKET_MASTER_PURCH_PRICES.sql" />
+    <Build Include="data_mart\Tables\t_fact_leaseops_opex_accruals_20210201.sql" />
+    <Build Include="stage\Tables\t_valnav_onstream_date_typecurves.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitdispmonthday_incr.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_plan.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\CONTROL_GROUP_AMENDMENT_HIST.sql" />
+    <Build Include="stage\Tables\t_fact_source_fdc_valnav_volumes_daily.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitnodeflowto.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_stg_metrix_sales_details_20201125.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_custom_field.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\BATTERY_FACILITIES.sql" />
+    <Build Include="stage\Tables\t_avocet_ontream_dates.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitallocmonthday.sql" />
+    <Build Include="stage_valnav\Tables\t_basedecline_fisc_scenario_params.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\UNITS.sql" />
+    <Build Include="stage\Tables\t_qbyte_organizations.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitcompparam.sql" />
+    <Build Include="stage_valnav\Tables\t_reserves_entity.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\PLANT_MASTERS.sql" />
+    <Build Include="stage\Tables\t_stg_valnav_reserves_ent_custom_field_def.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitallocmonthday_incr.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\INDIAN_RESERVE_MASTERS.sql" />
+    <Build Include="stage\Tables\t_cc_uwi_master_source.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitcompparam_incr.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_fisc_product_list_value.sql" />
+    <Build Include="stage\Tables\t_ctrl_ewf_primary_product_xref.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\WELL_TRACTS.sql" />
+    <Build Include="stage\Tables\t_ctrl_valnav_etl_variables_20201029.sql" />
+    <Build Include="stage\Tables\t_qbyte_cost_estimate_items.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitothertag.sql" />
+    <Build Include="stage\Tables\t_stg_prodview_proration_data.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_result_id.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\DELIVERY_SYSTEMS.sql" />
+    <Build Include="stage\Tables\t_ctrl_dim_desc_text_excptions.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitcompfluidlevel.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_forecast_inputs.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\ROYALTY_OBLIGATIONS.sql" />
+    <Build Include="stage\Tables\t_ctrl_etl_variables.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitcompmeasmeth.sql" />
+    <Build Include="stage_valnav\Tables\t_basedecline_results_btax_product_interm.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\WELL_FACTORS.sql" />
+    <Build Include="stage\Tables\t_prodview_typfluidprod.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunit.sql" />
+    <Build Include="stage_valnav\Tables\t_reserves_results_cost.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\DOI_OWNERS.sql" />
+    <Build Include="stage\Tables\t_prodview_onstream_dates.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvrouteset.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_custom_field_def.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\OWNER_GOVERNMENTS.sql" />
+    <Build Include="stage\Tables\t_fact_source_fdc_valnav_volumes.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvfacility.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_fisc_scenario_params.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\INDIAN_RESERVE_WELL_DETAILS.sql" />
+    <Build Include="stage\Tables\t_stg_ihs_volumes.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitdispmonthday.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\ROYALTY_GLOBAL_FACTOR_MASTERS.sql" />
+    <Build Include="stage\Tables\t_stg_valnav_reserves_xls.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitcompgathmonthcalc.sql" />
+    <Build Include="stage_valnav\Tables\check_onstream_date_budget.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\ROYALTY_FORMULA_MASTERS.sql" />
+    <Build Include="stage\Tables\t_ctrl_valnav_products.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitagreemt.sql" />
+    <Build Include="stage_valnav\Tables\t_reserves_ent_reserves_cache.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\UNIT_WELLS.sql" />
+    <Build Include="stage\Tables\t_wellview_wvt_wvjobreportcostgen.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvunitnodemeterevent.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_company_interest.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\PARTNER_OP_BATTERY_TXNS.sql" />
+    <Build Include="stage\Tables\t_fact_source_fdc_valnav_glj_volumes.sql" />
+    <Build Include="stage\Tables\t_qbyte_line_items_incr.sql" />
+    <Build Include="stage_valnav\Tables\t_basedecline_code_lookup.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\DIVISION_OF_INTERESTS.sql" />
+    <Build Include="stage\Tables\t_qbyte_provinces.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_product_interest.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\USER_ACCOUNTS.sql" />
+    <Build Include="stage\Tables\t_ihs_field.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_results_summary_product.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\WELL_MASTERS.sql" />
+    <Build Include="stage\Tables\t_source_cost_estimates_siteview.sql" />
+    <Build Include="stage\Tables\t_qbyte_major_accounts.sql" />
+    <Build Include="stage_valnav\Tables\t_basedecline_ent_custom_field.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\PRODUCTS.sql" />
+    <Build Include="stage\Tables\packages.sql" />
+    <Build Include="stage\Tables\t_ihs_r_well_status.sql" />
+    <Build Include="stage_valnav\Tables\t_reserves_results_lookup.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\FACILITY_CHARGE_FORMULAS.sql" />
+    <Build Include="stage\Tables\t_qbyte_afe_project_justifications.sql" />
+    <Build Include="data_mart\Tables\t_dim_entity_20201103.sql" />
+    <Build Include="stage\Tables\t_ctrl_accounts_xref.sql" />
+    <Build Include="stage_valnav\Tables\t_reserves_custom_field_def.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\GGS_MASTERS.sql" />
+    <Build Include="stage\Tables\t_fact_source_fdc_prodview.sql" />
+    <Build Include="stage\Tables\t_rpt_valnav_capital_actuals.sql" />
+    <Build Include="stage_valnav\Tables\t_basedecline_fisc_reserves_product.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\UNIT_TRACTS.sql" />
+    <Build Include="stage\Tables\t_ihs_well_node_incr.sql" />
+    <Build Include="stage\Tables\t_pwv_ap_header_tbl.sql" />
+    <Build Include="dbo\Tables\CTE_v_dim_source_scenario_finance_scenario_levels.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\INDIAN_RESERVES.sql" />
+    <Build Include="stage\Tables\t_qbyte_invoice_types.sql" />
+    <Build Include="stage\Tables\t_source_cost_estimates_wellview.sql" />
+    <Build Include="dbo\Tables\CTE_v_dim_valnav_current_prior_budget_scenario_source.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvfacilitymonthdaycalc.sql" />
+    <Build Include="stage\Tables\t_qbyte_clients.sql" />
+    <Build Include="stage\Tables\t_wellview_wvt_wvjobafe.sql" />
+    <Build Include="dbo\Tables\CTE_v_dim_valnav_scenario_BCD_cur_prior.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitcompparam.sql" />
+    <Build Include="stage\Tables\t_qbyte_line_items.sql" />
+    <Build Include="stage\Tables\t_afenav_afe_custom.sql" />
+    <Build Include="dbo\Tables\CTE_v_dim_valnav_scenario_BCD_var.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitdispmonthday_incr.sql" />
+    <Build Include="stage\Tables\t_wellview_wvt_wvwellheader.sql" />
+    <Build Include="stage\Tables\t_qbyte_afes_cost_centres.sql" />
+    <Build Include="dbo\Tables\CTE_v_dim_valnav_scenario_BCD_wbud.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitnode.sql" />
+    <Build Include="stage\Tables\t_prodview_shrink_yield_rates.sql" />
+    <Build Include="stage\Tables\CTE_v_dim_scenario_leaseops_BCD.sql" />
+    <Build Include="stage\Tables\t_stg_valnav_base_decline_ent_custom_field_def.sql" />
+    <Build Include="dbo\Tables\CTE_v_qbyte_account_hierarchy_source.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitcompgathmonthcalc.sql" />
+    <Build Include="stage\Tables\t_qbyte_accounts.sql" />
+    <Build Include="stage\Tables\CTE_v_dim_scenario_leaseops_BCD_CUR_PRIOR_CTE.sql" />
+    <Build Include="dbo\Tables\CTE_v_qbyte_account_hierarchy_source_finance.sql" />
+    <Build Include="stage\Tables\t_qbyte_invoices.sql" />
+    <Build Include="stage\Tables\t_stg_qbyte_volumes_facts_incr.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_production_20201028.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitcompstatus.sql" />
+    <Build Include="stage\Tables\t_ihs_pden_production_month_incr.sql" />
+    <Build Include="stage\Tables\t_qbyte_udf_codes.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_financial_20201028.sql" />
+    <Build Include="dbo\Tables\data_source_table.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitcompwhcut.sql" />
+    <Build Include="stage\Tables\t_wellview_vendor_library.sql" />
+    <Build Include="stage\Tables\t_qbyte_codes.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_reserves_20201028.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitcompgathmonthdaycalc.sql" />
+    <Build Include="stage\Tables\t_stg_opex_budget_facts.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_financial_xls_20201028.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitcompmeasmeth.sql" />
+    <Build Include="stage_csx_csland\Tables\C_BASE.sql" />
+    <Build Include="stage\Tables\t_afe_cost_estimates_afenav.sql" />
+    <Build Include="stage\Tables\t_valnav_xls_reserves_uwis.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_reserves_xls_20201028.sql" />
+    <Build Include="dbo\Tables\Parse_Hierarchy_Path.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitothertag.sql" />
+    <Build Include="stage_csx_csland\Tables\C_SERVICE_FEES.sql" />
+    <Build Include="stage\Tables\t_afenav_fieldcost_amounts.sql" />
+    <Build Include="stage\Tables\t_qbyte_authorizations_for_expenditure.sql" />
+    <Build Include="data_mart\Tables\t_dim_scenario_20201028.sql" />
+    <Build Include="dbo\Tables\Parse_scenario_sort_key.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitcompfluidlevel.sql" />
+    <Build Include="stage_csx_csland\Tables\C_SERVICE_LOC.sql" />
+    <Build Include="stage\Tables\t_afe_cost_estimates_qbyte.sql" />
+    <Build Include="stage\Tables\CTE_v_valnav_netback_accounts.sql" />
+    <Build Include="data_mart\Tables\t_fact_opex_budgets_20201028.sql" />
+    <Build Include="dbo\Tables\Parse_sort_key.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitcomp.sql" />
+    <Build Include="stage_csx_csland\Tables\C_SUB.sql" />
+    <Build Include="stage\Tables\t_tmp_text_execptions.sql" />
+    <Build Include="stage\Tables\t_siteview_svt_svsiteheader.sql" />
+    <Build Include="stage\Tables\t_ctrl_valnav_etl_variables_20201028.sql" />
+    <Build Include="dbo\Tables\Revised_account_description.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitdispmonthday.sql" />
+    <Build Include="stage_csx_csland\Tables\T_ADMIN.sql" />
+    <Build Include="stage\Tables\t_stg_focus_area.sql" />
+    <Build Include="stage\Tables\t_qbyte_cost_centre_name_revised_desc.sql" />
+    <Build Include="stage\Tables\t_ctrl_etl_variables_20201028.sql" />
+    <Build Include="dbo\Tables\Revised_child_alias.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitallocmonthday.sql" />
+    <Build Include="stage_csx_csland\Tables\T_AREA.sql" />
+    <Build Include="stage\Tables\t_afenav_lut_afe_type.sql" />
+    <Build Include="stage\Tables\t_ctrl_qbyte_conversion_factors.sql" />
+    <Build Include="data_mart\Tables\t_leaseops_current_prior_scenario.sql" />
+    <Build Include="data_mart\Tables\t_fact_opex_budgets_20201030.sql" />
+    <Build Include="dbo\Tables\Revised_child_id.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvroutesetroute.sql" />
+    <Build Include="stage\Tables\t_stg_opex_volumes_budget_dly_facts.sql" />
+    <Build Include="stage\Tables\t_stg_qbyte_volumes_facts.sql" />
+    <Build Include="data_mart\Tables\t_dim_valnav_reserve_category.sql" />
+    <Build Include="dbo\Tables\Revised_class_code_description.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunit.sql" />
+    <Build Include="stage\Tables\t_wellview_wvt_wvcas.sql" />
+    <Build Include="stage\Tables\t_valnav_dim_hierarchy_source.sql" />
+    <Build Include="data_mart\Tables\t_fact_finance_budgets.sql" />
+    <Build Include="dbo\Tables\Revised_gl_account_description.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitcompgathmonthdaycalc_incr.sql" />
+    <Build Include="stage\Tables\t_qbyte_ownership_agreement_links.sql" />
+    <Build Include="stage\Tables\t_valnav_dim_hierarchy_history.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_reserves_typecurves.sql" />
+    <Build Include="dbo\Tables\Revised_Hierarchy_Path.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitcompdowntm.sql" />
+    <Build Include="stage\Tables\t_prodview_downtime_hours_volumes.sql" />
+    <Build Include="stage\Tables\t_ctrl_fixed_var_opex.sql" />
+    <Build Include="data_mart\Tables\t_dim_gross_net.sql" />
+    <Build Include="dbo\Tables\Revised_major_account_description.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitallocmonthday_incr.sql" />
+    <Build Include="stage\Tables\t_qbyte_cost_centres.sql" />
+    <Build Include="data_mart\Tables\t_fact_afe.sql" />
+    <Build Include="dbo\Tables\Revised_parent_id.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitcompparam_incr.sql" />
+    <Build Include="stage\Tables\t_wellview_wvt_wvjobreport.sql" />
+    <Build Include="stage\Tables\t_stg_avocet_mv_fv_site.sql" />
+    <Build Include="data_mart\Tables\t_fact_ap_ar_open.sql" />
+    <Build Include="dbo\Tables\Revised_scenario_sort_key.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitnodeflowto.sql" />
+    <Build Include="stage\Tables\t_pvr_twell.sql" />
+    <Build Include="stage\Tables\t_ihs_well_license_status.sql" />
+    <Build Include="data_mart\Tables\t_dim_normalized_time.sql" />
+    <Build Include="dbo\Tables\Revised_sort_key.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitagreemt.sql" />
+    <Build Include="stage\Tables\t_pvr_uwi_onstream_dates.sql" />
+    <Build Include="stage\Tables\t_ctrl_Revised_account_description.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_financial_xls.sql" />
+    <Build Include="dbo\Tables\StrMonthList.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvunitnodemeterevent.sql" />
+    <Build Include="stage\Tables\t_fdc_history_data_TEST.sql" />
+    <Build Include="stage\Tables\t_ctrl_valnav_custom_data.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_financial_glj.sql" />
+    <Build Include="dbo\Tables\t_dim_account_capital.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvrouteset.sql" />
+    <Build Include="stage\Tables\t_source_cost_estimates_qbyte.sql" />
+    <Build Include="stage\Tables\t_cc_num_working_interest.sql" />
+    <Build Include="data_mart\Tables\t_fact_leaseops_opex_accruals.sql" />
+    <Build Include="dbo\Tables\t_dim_account_capital_clean.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvfacility.sql" />
+    <Build Include="stage\Tables\t_stg_opex_accruals_xls.sql" />
+    <Build Include="stage\Tables\t_pwv_ap_detail_tbl.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_production_typecurves.sql" />
+    <Build Include="stage_prodview\Tables\t_pvt_pvflownetheader.sql" />
+    <Build Include="stage\Tables\t_ihs_well.sql" />
+    <Build Include="stage\Tables\t_ihs_well_license_incr.sql" />
+    <Build Include="data_mart\Tables\t_dim_scenario_fdc_downtime.sql" />
+    <Build Include="stage_valnav\Tables\t_basedecline_results_lookup.sql" />
+    <Build Include="stage\Tables\t_stg_valnav_typecurves_ent_custom_field_def.sql" />
+    <Build Include="stage\Tables\t_qbyte_business_associates.sql" />
+    <Build Include="dbo\Tables\TableArray.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_shared_plan_data.sql" />
+    <Build Include="stage\Tables\t_ihs_pden_production_month.sql" />
+    <Build Include="stage\Tables\t_wellview_wvt_wvjobdrillstringdrillparam.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_reserves_glj.sql" />
+    <Build Include="stage_valnav\Tables\t_reserves_results_regime.sql" />
+    <Build Include="stage\Tables\t_stg_prodview_volumes_final.sql" />
+    <Build Include="stage\Tables\t_qbyte_ba_addresses.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_production_glj.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_entity.sql" />
+    <Build Include="stage\Tables\t_fact_source_leaseops_valnav_volumes.sql" />
+    <Build Include="stage\Tables\t_qbyte_fa_ba_properties.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_production_typecurves_daily.sql" />
+    <Build Include="dbo\Tables\WatermarkTable.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_fisc_reserves_product.sql" />
+    <Build Include="stage\Tables\t_prodview_joints_to_fluid.sql" />
+    <Build Include="stage\Tables\t_valnav_onstream_date_reserves.sql" />
+    <Build Include="data_mart\Tables\t_fact_fdc.sql" />
+    <Build Include="data_mart\Tables\t_fact_opex_budgets_20201021.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_fisc_cap_cost.sql" />
+    <Build Include="stage\Tables\t_source_cost_estimates_afenav.sql" />
+    <Build Include="stage\Tables\v_ctrl_volumes_valanv_time_period_CTE.sql" />
+    <Build Include="data_mart\Tables\t_dim_organization.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_production_20210104.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_results_summary.sql" />
+    <Build Include="Stage_CashReceipts\Tables\PA_Splits_History.sql" />
+    <Build Include="stage\Tables\t_prodview_attributes.sql" />
+    <Build Include="data_mart\Tables\t_dim_entity.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_capital_actual.sql" />
+    <Build Include="Stage_CashReceipts\Tables\Detail_Line_Items_ARAR.sql" />
+    <Build Include="stage\Tables\t_afe_cost_estimates_siteview.sql" />
+    <Build Include="data_mart\Tables\dim_date.sql" />
+    <Build Include="data_mart\Tables\t_fact_opex_budgets_20201021a.sql" />
+    <Build Include="Stage_CashReceipts\Tables\Detail_Line_Items_ARAR_backup.sql" />
+    <Build Include="stage\Tables\t_siteview_svt_svjobreportcost.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_production_2.sql" />
+    <Build Include="data_mart\Tables\t_dim_scenario_20200810.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_reversion_interest.sql" />
+    <Build Include="Stage_CashReceipts\Tables\t_ctrl_etl_variables.sql" />
+    <Build Include="data_mart\Tables\t_dim_account_finance.sql" />
+    <Build Include="stage\Tables\t_stg_prism_uwi_cc.sql" />
+    <Build Include="data_mart\Tables\t_fact_ap_ar.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_ent_company_interest.sql" />
+    <Build Include="Stage_CashReceipts\Tables\stage_pa_splits.sql" />
+    <Build Include="stage\Tables\t_prodview_proration_data.sql" />
+    <Build Include="stage_valnav\Tables\t_reserves_code_lookup.sql" />
+    <Build Include="Stage_CashReceipts\Tables\PA_Splits_Current.sql" />
+    <Build Include="stage\Tables\t_rpt_csx_latest_working_interest.sql" />
+    <Build Include="data_mart\Tables\t_fact_opex_budgets.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_import_id.sql" />
+    <Build Include="Stage_CashReceipts\Tables\stage_Detail_Line_Items_ARAR.sql" />
+    <Build Include="stage\Tables\t_dim_source_entity_valnav_entities.sql" />
+    <Build Include="data_mart\Tables\t_fact_gl.sql" />
+    <Build Include="stage_csx_csland\Tables\W_DETAIL2.sql" />
+    <Build Include="stage\Tables\t_ihs_xref_status.sql" />
+    <Build Include="stage_csx_csland\Tables\BA_TABLE.sql" />
+    <Build Include="stage\Tables\t_ihs_pden_vol_by_month.sql" />
+    <Build Include="data_mart\Tables\t_dim_vendor.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_results_lookup.sql" />
+    <Build Include="stage_csx_csland\Tables\C_OPER_CAPL90.sql" />
+    <Build Include="data_mart\Tables\t_dim_valnav_gross_net.sql" />
+    <Build Include="stage_valnav\Tables\t_reserves_result_id.sql" />
+    <Build Include="stage_csx_csland\Tables\D_XREF.sql" />
+    <Build Include="stage\Tables\t_afenav_afenumber.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_financial.sql" />
+    <Build Include="stage_valnav\Tables\t_reserves_fisc_scenario.sql" />
+    <Build Include="stage_csx_csland\Tables\T_OWNERS.sql" />
+    <Build Include="stage\Tables\t_wellview_wvt_wvjobdrillstring.sql" />
+    <Build Include="data_mart\Tables\t_dim_authorization_for_expenditure.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_ent_shared_plan_data.sql" />
+    <Build Include="stage_csx_csland\Tables\C_OPER_CAPL81.sql" />
+    <Build Include="stage\Tables\t_qbyte_voucher_types.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_reserves_xls.sql" />
+    <Build Include="data_mart_metrix\Tables\t_fact_metrix_fees_op.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_ent_lease_interest.sql" />
+    <Build Include="stage_csx_csland\Tables\W_DETAIL1.sql" />
+    <Build Include="stage\Tables\t_prodview_allocated_volumes_incr.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_production.sql" />
+    <Build Include="data_mart_metrix\Tables\t_fact_metrix_op.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_results_summary.sql" />
+    <Build Include="stage_csx_csland\Tables\D_DETAIL.sql" />
+    <Build Include="stage\Tables\t_stg_ihs_volumes_incr.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_financial_typecurves.sql" />
+    <Build Include="data_mart_metrix\Tables\t_fact_metrix_royalty_op.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_ent_product_interest.sql" />
+    <Build Include="stage_csx_csland\Tables\X_REFERENCE.sql" />
+    <Build Include="stage\Tables\t_siteview_svt_svjobafe.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_reserves.sql" />
+    <Build Include="stage_ihs\Tables\t_ihs_well.sql" />
+    <Build Include="stage\Tables\t_wellview_wvt_wvjob.sql" />
+    <Build Include="data_mart\Tables\t_dim_valnav_normalized_time.sql" />
+    <Build Include="stage_valnav\Tables\t_basedecline_entity.sql" />
+    <Build Include="stage_ihs\Tables\t_ihs_pden.sql" />
+    <Build Include="stage\Tables\t_ctrl_valnav_account_xref.sql" />
+    <Build Include="data_mart\Tables\t_dim_scenario_typecurves.sql" />
+    <Build Include="stage_ihs\Tables\t_fact_accumap.sql" />
+    <Build Include="stage\Tables\t_qbyte_products.sql" />
+    <Build Include="data_mart\Tables\t_dim_scenario.sql" />
+    <Build Include="stage_valnav\Tables\t_reserves_fisc_reserves_product.sql" />
+    <Build Include="stage_ihs\Tables\t_fact_source_accumap_volumes.sql" />
+    <Build Include="stage\Tables\t_stg_finance_budget_facts.sql" />
+    <Build Include="data_mart\Tables\t_dim_account_hierarchy.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_company.sql" />
+    <Build Include="stage_ihs\Tables\t_ihs_well_description.sql" />
+    <Build Include="stage\Tables\t_afenav_afe.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_ar_contract.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_results_btax_product.sql" />
+    <Build Include="stage_ihs\Tables\t_stg_accumap_volumes_by_month.sql" />
+    <Build Include="stage\Tables\prod_t_prodview_injection_volumes.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_facility.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_fisc_scenario.sql" />
+    <Build Include="stage_ihs\Tables\t_ihs_r_well_profile_type.sql" />
+    <Build Include="stage\Tables\t_fact_source_qbyte_working_interest.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_delivery_sequence.sql" />
+    <Build Include="stage_valnav\Tables\t_basedecline_result_id.sql" />
+    <Build Include="stage_ihs\Tables\t_ihs_pden_vol_by_month_incr.sql" />
+    <Build Include="stage\Tables\t_ctrl_special_accounts.sql" />
+    <Build Include="data_mart_metrix\Tables\t_fact_metrix_fees.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_results_cost_detail.sql" />
+    <Build Include="stage_ihs\Tables\t_ihs_pden_vol_by_month.sql" />
+    <Build Include="stage\Tables\t_ihs_well_description.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_sales_type.sql" />
+    <Build Include="stage\Tables\t_ctrl_etl_variables_2.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_company.sql" />
+    <Build Include="stage_mds\Tables\t_mds_bcd_cost_centre_custom_groupings.sql" />
+    <Build Include="stage\Tables\t_ihs_attributes.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_charge_formula.sql" />
+    <Build Include="stage_valnav\Tables\t_basedecline_results_btax_product.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_stg_metrix_sales_details.sql" />
+    <Build Include="stage\Tables\t_qbyte_account_hierarchy_source_finance_revised_desc.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_purchaser_sequence.sql" />
+    <Build Include="data_mart\Tables\t_fact_leaseops_opex_accruals_20201015.sql" />
+    <Build Include="stage_valnav\Tables\t_basedecline_ent_detail.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_stg_metrix_royalty_splits.sql" />
+    <Build Include="stage\Tables\t_wellview_wvt_wvjobrig.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_entity.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_code_lookup.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_ctrl_metrix_products.sql" />
+    <Build Include="stage\Tables\t_fact_source_fdc_prodview_incr.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_control_group.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_results_btax_product.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_stg_metirx_parnter_op_battery_txns_incr.sql" />
+    <Build Include="stage\Tables\t_qbyte_vouchers.sql" />
+    <Build Include="data_mart_metrix\Tables\t_fact_metrix_royalty.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_results_btax.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_stg_metirx_parnter_op_battery_txns.sql" />
+    <Build Include="stage\Tables\t_prodview_proration_data_20200727.sql" />
+    <Build Include="stage\Tables\t_ihs_r_well_profile_type.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_purchaser.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_results_btax.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_ctrl_metrix_etl_variables.sql" />
+    <Build Include="stage\Tables\t_siteview_svt_svjob.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_well.sql" />
+    <Build Include="stage_valnav\Tables\t_basedecline_fisc_scenario.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_stg_metrix_participant_availables.sql" />
+    <Build Include="stage\Tables\t_qbyte_account_group_rollups.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_date.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_fisc_op_cost.sql" />
+    <Build Include="datamart_marketing\Tables\t_fact_marketing.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_stg_metrix_sales_details_incr.sql" />
+    <Build Include="stage\Tables\t_qbyte_doi_deck_partners.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_product.sql" />
+    <Build Include="stage_valnav\Tables\t_basedecline_results_btax_interm.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_stg_metrix_government_registry.sql" />
+    <Build Include="stage\Tables\t_ctrl_valnav_etl_variables_20200811.sql" />
+    <Build Include="stage\Tables\t_rpt_csx_well_insurance_election.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_charge_type.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_lease_interest.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_stg_metrix_facility_charges.sql" />
+    <Build Include="stage\Tables\t_ctrl_etl_variables_20200811.sql" />
+    <Build Include="stage\Tables\t_stg_prodview_volumes_final_incr.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_target_facility.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_results_regime.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_stg_metrix_fc_distributions_incr.sql" />
+    <Build Include="stage\Tables\t_qbyte_account_hierarchy_source_finance.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_royalty_obligation_sequence.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_stg_metrix_fc_distributions.sql" />
+    <Build Include="stage\Tables\t_ihs_well_node.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_owner.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_ent_custom_field.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_stg_metrix_facility_charges_incr.sql" />
+    <Build Include="stage\Tables\t_qbyte_vouchers_incr.sql" />
+    <Build Include="data_mart_metrix\Tables\t_fact_metrix.sql" />
+    <Build Include="stage_valnav\Tables\t_reserves_results_btax.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_stg_metrix_participant_availables_incr.sql" />
+    <Build Include="stage\Tables\t_stg_valnav_budget_ent_custom_field_def.sql" />
+    <Build Include="datamart_marketing\Tables\t_stg_marketing_ALL_flownet_hierarchy.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_fisc_reserves_product.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_stg_metrix_royalty_splits_incr.sql" />
+    <Build Include="stage\Tables\t_fdc_history_data.sql" />
+    <Build Include="datamart_marketing\Tables\t_stg_marketing_flownet_hierarchy.sql" />
+    <Build Include="stage_valnav\Tables\t_reserves_results_cost_detail.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_stg_metrix_sales_details_w_pricing_userdefined1.sql" />
+    <Build Include="stage\Tables\prod_t_wellview_wvt_wvjobreportcostgen.sql" />
+    <Build Include="datamart_marketing\Tables\CTE_t_stg_marketing_flownet_hierarchy.sql" />
+    <Build Include="stage_valnav\Tables\t_reserves_results_summary.sql" />
+    <Build Include="STAGE_METRIX\Tables\t_rpt_royalty_control_groups.sql" />
+    <Build Include="stage\Tables\t_qbyte_operator_afes.sql" />
+    <Build Include="datamart_marketing\Tables\t_stg_prodview_all_flownet_hierarchy.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_ent_reversion_interest.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\BATTERY_MASTERS.sql" />
+    <Build Include="stage\Tables\t_afe_cost_estimates_wellview.sql" />
+    <Build Include="datamart_marketing\Tables\t_prodview_sales_disposition_points.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_results_regime.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\DOI_MASTERS.sql" />
+    <Build Include="stage\Tables\Custom_Groupings_Leaf.sql" />
+    <Build Include="datamart_marketing\Tables\t_ctrl_marketing_etl_variables.sql" />
+    <Build Include="stage_valnav\Tables\t_basedecline_results_btax.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\FACILITIES.sql" />
+    <Build Include="stage\Tables\t_stg_qbyte_deleted_line_items_incr.sql" />
+    <Build Include="datamart_marketing\Tables\t_stg_prodview_group_point_doi.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_results_lookup.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\FC_FORMULA_RETRIEVALS.sql" />
+    <Build Include="stage\Tables\t_valnav_onstream_date_budget.sql" />
+    <Build Include="datamart_marketing\Tables\t_stg_qbyte_cost_centre_doi.sql" />
+    <Build Include="stage_valnav\Tables\t_basedecline_ent_reserves_cache.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\TRACT_MASTERS.sql" />
+    <Build Include="stage\Tables\t_cost_centre_hierarchy.sql" />
+    <Build Include="dbo\Tables\Parse_Hierarchy_Path_20200612.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_fisc_price_deck.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\DELIVERY_SYSTEM_MASTERS.sql" />
+    <Build Include="stage\Tables\t_qbyte_doi_decks.sql" />
+    <Build Include="dbo\Tables\Revised_Hierarchy_Path_20200612.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_ent_detail.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\MARKET_MASTER_DISPOSITIONS.sql" />
+    <Build Include="stage\Tables\t_prodview_allocated_volumes.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_ent_reserves_cache.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\PLANT_FACILITIES.sql" />
+    <Build Include="stage\Tables\t_ctrl_volumes_valnav_time_period.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\CONTROL_GROUPS.sql" />
+    <Build Include="data_mart_metrix\Tables\t_dim_purchaser_20210105.sql" />
+    <Build Include="stage\Tables\t_prodview_injection_volumes_incr.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_detail.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\FI_SUBMISSIONS.sql" />
+    <Build Include="dbo\Tables\cteak.sql" />
+    <Build Include="stage\Tables\t_qbyte_cc_bnp_divest_hierarchy.sql" />
+    <Build Include="data_mart\Tables\t_fact_opex_budgets_20201013.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_fisc_scenario_params.sql" />
+    <Build Include="dbo\Tables\object_rows.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\PARTICIPANT_AVAILABLES.sql" />
+    <Build Include="stage\Tables\prod_t_wellview_wvt_wvjob.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_code_lookup.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\MARKET_MASTER_PURCHASERS.sql" />
+    <Build Include="stage\Tables\t_ihs_pden.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_results_cost.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\ROYALTY_OBLIGATION_MASTERS.sql" />
+    <Build Include="stage\Tables\t_qbyte_reporting_entities.sql" />
+    <Build Include="Mktg_ReportLoads\Tables\t_stg_Revenue_Model.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_entity.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\CONTROL_GROUP_MASTERS.sql" />
+    <Build Include="stage\Tables\t_ctrl_valnav_etl_variables_20201124.sql" />
+    <Build Include="stage\Tables\t_vendor_invoices.sql" />
+    <Build Include="Mktg_ReportLoads\Tables\t_stg_portfolio_pricing_xls.sql" />
+    <Build Include="stage_valnav\Tables\t_basedecline_custom_field_def.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\INJECTION_FACILITIES.sql" />
+    <Build Include="stage\Tables\t_ihs_business_associate.sql" />
+    <Build Include="Mktg_ReportLoads\Tables\t_stg_portfolio_pricing_text.sql" />
+    <Build Include="stage_valnav\Tables\t_reserves_fisc_scenario_params.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\ROYALTY_SPLITS.sql" />
+    <Build Include="stage\Tables\t_qbyte_vouchers_1.sql" />
+    <Build Include="Mktg_ReportLoads\Tables\t_stg_CorporateModelBudgetConversionFactor.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_manual_forecast.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\CHARGE_TYPES.sql" />
+    <Build Include="stage\Tables\t_qbyte_countries.sql" />
+    <Build Include="Mktg_ReportLoads\Tables\t_stg_CorporateModelBudget1.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_segment.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\PARTNER_OP_BATTERY_PRICES.sql" />
+    <Build Include="stage\Tables\t_afenav_partners.sql" />
+    <Build Include="OLAPControl\Tables\t_Run_Status_Codes.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_ent_reserves_category.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\OWNER_MASTERS.sql" />
+    <Build Include="stage\Tables\t_ihs_well_license.sql" />
+    <Build Include="OLAPControl\Tables\t_Run_Task_Log.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_results_cost_detail.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\UNIT_MASTERS.sql" />
+    <Build Include="stage\Tables\t_siteview_svt_svjobreport.sql" />
+    <Build Include="OLAPControl\Tables\t_dim_normalized_time.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_fisc_scenario.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\PARTICIPANT_TYPES.sql" />
+    <Build Include="stage\Tables\t_prodview_injection_volumes.sql" />
+    <Build Include="OLAPControl\Tables\dim_date.sql" />
+    <Build Include="data_mart\Tables\t_fact_valnav_reserves_20210104.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_fisc_product_list_value.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\WELLS.sql" />
+    <Build Include="stage\Tables\t_qbyte_cost_centre_legals.sql" />
+    <Build Include="OLAPControl\Tables\t_Run_Job_Log.sql" />
+    <Build Include="stage_valnav\Tables\t_typecurves_result_id.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\ROYALTY_OBLIG_FACTOR_VALUES.sql" />
+    <Build Include="stage\Tables\t_ctrl_valnav_etl_variables.sql" />
+    <Build Include="OLAPControl\Tables\t_ctrl_etl_variables.sql" />
+    <Build Include="stage\Tables\t_ctrl_valnav_etl_variables_20210104.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_ent_reserves_category.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\FC_FORMULA_MASTERS.sql" />
+    <Build Include="stage\Tables\t_qbyte_special_exchange_rates.sql" />
+    <Build Include="OLAPControl\Tables\t_qbyte_deleted_lineitems_log.sql" />
+    <Build Include="dbo\Tables\CTE_v_dim_valnav_current_prior_budget_scenario_source_20210104.sql" />
+    <Build Include="stage_valnav\Tables\t_budget_results_cost.sql" />
+    <Build Include="STAGE_METRIX_METRIX\Tables\CONTROL_GROUP_HIERARCHIES.sql" />
+    <Build Include="stage\Tables\t_ihs_pden_vol_by_month_incr.sql" />
+    <Build Include="pv30_prodcopy\Tables\pvt_pvfacilitymonthdaycalc.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_financial_GLJReserves.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_chance_of_success_budget.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_reserves_GLJReserves_final.sql" />
+    <Build Include="STAGE_METRIX\Views\v_fact_source_metrix_inventories_incr.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_royalty_by_product_calculations_typecurves.sql" />
+    <Build Include="stage\Views\v_valnav_TypeCurves_uwi_working_interest.sql" />
+    <Build Include="dbo\Views\v_dim_afe_type.sql" />
+    <Build Include="dbo\Views\v_dim_date_activity_capital.sql" />
+    <Build Include="stage\Views\v_qbyte_account_hierarchy_source_finance.sql" />
+    <Build Include="dbo\Views\v_fact_ITTest.sql" />
+    <Build Include="dbo\Views\v_fact_valnav_financial.sql" />
+    <Build Include="dbo\Views\v_fact_ap_ar_open.sql" />
+    <Build Include="stage\Views\v_prodview_downtime_hours_volumes.sql" />
+    <Build Include="dbo\Views\v_dim_gross_net.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_production_budget.sql" />
+    <Build Include="stage\Views\v_valnav_forecast_start_date_budget.sql" />
+    <Build Include="stage\Views\v_fact_source_fdc_ihs_incr.sql" />
+    <Build Include="dbo\Views\v_dim_uwi_corporate_hierarchy.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_capital_GLJreserves.sql" />
+    <Build Include="dbo\Views\v_dim_vendor.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_reserves_typecurves.sql" />
+    <Build Include="dbo\Views\v_dim_date_rig_on_production.sql" />
+    <Build Include="stage\Views\v_stg_ihs_volumes_incr.sql" />
+    <Build Include="stage_export\Views\v_ewf_prod_data.sql" />
+    <Build Include="stage\Views\v_prodview_bsw.sql" />
+    <Build Include="stage\Views\v_stg_qbyte_volumes_facts.sql" />
+    <Build Include="stage_valnav\Views\v_budget_result_id.sql" />
+    <Build Include="STAGE_METRIX\Views\v_rpt_royalty_obligations.sql" />
+    <Build Include="stage\Views\v_qbyte_afe_cc_uwis.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_revenue_entity.sql" />
+    <Build Include="STAGE_METRIX\Views\v_fact_source_metrix_inventories.sql" />
+    <Build Include="stage\Views\v_dim_source_account_qbyte_hierarchy.sql" />
+    <Build Include="STAGE_METRIX\Views\v_rpt_ownership_summary.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_activity_period.sql" />
+    <Build Include="stage_ihs\Views\v_fact_accumap.sql" />
+    <Build Include="stage\Views\v_fact_source_qbyte.sql" />
+    <Build Include="datamart_marketing\Views\v_ctrl_marketing_sales_points_ALL.sql" />
+    <Build Include="STAGE_METRIX\Views\v_dim_source_metrix_ar_contract.sql" />
+    <Build Include="stage\Views\v_afe_cost_estimates_qbyte.sql" />
+    <Build Include="stage\Views\v_dim_source_organizations.sql" />
+    <Build Include="dbo\Views\v_dim_VNTypeCurves_scenario.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_charge_formula.sql" />
+    <Build Include="dbo\Views\v_dim_normalized_month.sql" />
+    <Build Include="stage\Views\v_afe_cost_estimates_afenav.sql" />
+    <Build Include="dbo\Views\v_dim_corporate_hierarchy_BCD.sql" />
+    <Build Include="stage\Views\v_dim_source_account_qbyte_hierarchy_finance.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_production_base_decline.sql" />
+    <Build Include="dbo\Views\v_dim_corporate_hierarchy.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_production_GLJReserves_final.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_economics_typecurves.sql" />
+    <Build Include="dbo\Views\v_dim_date_cost_centre_created.sql" />
+    <Build Include="stage\Views\v_stg_qbyte_volumes_facts_incr.sql" />
+    <Build Include="dbo\Views\v_fact_VNReserves_reserves.sql" />
+    <Build Include="STAGE_METRIX\Views\v_dim_source_metrix_facility.sql" />
+    <Build Include="datamart_marketing\Views\v_fact_source_marketing.sql" />
+    <Build Include="dbo\Views\v_dim_valnav_corporate_hierarchy_BCD.sql" />
+    <Build Include="stage\Views\v_valnav_netback_accounts.sql" />
+    <Build Include="stage\Views\v_prodview_allocated_volumes.sql" />
+    <Build Include="dbo\Views\v_dim_valnav_reserve_category.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_economics_GLJreserves.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_royalty_obligation_sequence.sql" />
+    <Build Include="STAGE_METRIX\Views\v_dim_source_metrix_charge_type.sql" />
+    <Build Include="stage\Views\v_prodview_onstream_dates.sql" />
+    <Build Include="stage\Views\v_cc_uwi_master_source.sql" />
+    <Build Include="dbo\Views\v_fact_valnav_reserves.sql" />
+    <Build Include="STAGE_METRIX\Views\v_dim_source_metrix_purchaser_sequence.sql" />
+    <Build Include="dbo\Views\v_CTE_v_dim_source_scenario_finance_dim_scenario.sql" />
+    <Build Include="stage\Views\v_fact_source_opex_accrual_voucher_upload_header.sql" />
+    <Build Include="stage\Views\v_stg_valnav_base_decline_ent_custom_field_def.sql" />
+    <Build Include="stage\Views\v_fact_source_fdc_valnav_volumes_daily.sql" />
+    <Build Include="stage\Views\v_fact_source_fdc_prodview_injection.sql" />
+    <Build Include="stage_csx\Views\v_rpt_csx_latest_working_interest.sql" />
+    <Build Include="data_mart_metrix\Views\v_fact_metrix.sql" />
+    <Build Include="stage\Views\v_stg_prodview_volumes.sql" />
+    <Build Include="stage\Views\v_fact_source_fdc_qbyte_sales_incr.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_well.sql" />
+    <Build Include="datamart_marketing\Views\v_fact_source_allocated_sales_raw_volumes.sql" />
+    <Build Include="stage_ihs\Views\v_dim_accumap_wells.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_charge_sequence.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_royalties_typecurves.sql" />
+    <Build Include="dbo\Views\v_dim_date_accounting.sql" />
+    <Build Include="dbo\Views\v_dim_authorization_for_expenditure.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_financial_budget.sql" />
+    <Build Include="stage\Views\v_fact_source_fdc_prodview_downtime_incr.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_royalty_by_product_calculations_base_decline.sql" />
+    <Build Include="dbo\Views\v_dim_normalized_day.sql" />
+    <Build Include="dbo\Views\v_fact_VNReserves_production.sql" />
+    <Build Include="STAGE_METRIX\Views\v_fact_source_metrix_royalty_incr.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_product.sql" />
+    <Build Include="dbo\Views\v_fact_VNTypecurves_reserves.sql" />
+    <Build Include="dbo\Views\v_dim_VNReserves_scenario.sql" />
+    <Build Include="stage\Views\v_fact_source_fdc_qbyte_sales_full.sql" />
+    <Build Include="stage\Views\v_fact_source_fdc_ihs_full.sql" />
+    <Build Include="dbo\Views\v_dim_valnav_normalized_month.sql" />
+    <Build Include="stage\Views\v_exception_volumes_vs_valnav_uwi_cost_centre.sql" />
+    <Build Include="STAGE_METRIX\Views\v_dim_source_metrix_delivery_sequence.sql" />
+    <Build Include="dbo\Views\v_dim_scenario_leaseops_BCD.sql" />
+    <Build Include="stage_export\Views\v_ewf_event_sequence_info.sql" />
+    <Build Include="dbo\Views\v_dim_date_rig_last_production.sql" />
+    <Build Include="stage\Views\v_prodview_typfluidprod.sql" />
+    <Build Include="dbo\Views\v_dim_date_activity_volumes.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_production_GLJReserves.sql" />
+    <Build Include="stage\Views\v_fact_source_cost_estimates_wellview.sql" />
+    <Build Include="dbo\Views\v_dim_valnav_corporate_hierarchy.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_royalty_by_product_calculations_budget.sql" />
+    <Build Include="STAGE_METRIX\Views\v_fact_source_metrix_nonop_sales.sql" />
+    <Build Include="stage\Views\v_fact_source_fdc_history_facts.sql" />
+    <Build Include="dbo\Views\v_fact_ap_ar.sql" />
+    <Build Include="stage\Views\v_qbyte_afe_cc_list.sql" />
+    <Build Include="datamart_marketing\Views\v_stg_qbyte_cost_centre_doi.sql" />
+    <Build Include="datamart_marketing\Views\v_ctrl_marketing_sales_points.sql" />
+    <Build Include="STAGE_METRIX\Views\v_fact_source_metrix_sales.sql" />
+    <Build Include="stage_ihs\Views\v_dim_date_activity_accumap.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_production_base_decline_final.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_royalty_by_product_calculations_GLJReserves.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_owner.sql" />
+    <Build Include="stage\Views\v_dim_source_entity_valnav_history_entities.sql" />
+    <Build Include="stage\Views\v_siteview_source_cost_estimates.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_purchaser_sequence.sql" />
+    <Build Include="stage\Views\iv_qbyte_cost_centre_legals.sql" />
+    <Build Include="stage\Views\v_valnav_xls_reserves_uwis.sql" />
+    <Build Include="stage\Views\v_dim_source_entity_cost_centre_hierarchy.sql" />
+    <Build Include="stage\Views\v_fact_source_ap_ar.sql" />
+    <Build Include="stage_csx\Views\v_rpt_csx_well_insurance_election.sql" />
+    <Build Include="dbo\Views\v_dim_account_finance.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_reserves_budget.sql" />
+    <Build Include="STAGE_METRIX\Views\v_fact_source_metrix_nonop_sales_incr.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_sales_tik.sql" />
+    <Build Include="stage\Views\v_opex_budget_source_facts.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_revenues_royalty_by_product_budget.sql" />
+    <Build Include="dbo\Views\v_dim_valnav_scenario_BCD.sql" />
+    <Build Include="stage_valnav\Views\v_basedecline_result_id.sql" />
+    <Build Include="dbo\Views\v_dim_scenario_volumes.sql" />
+    <Build Include="dbo\Views\v_fact_valnav_production_BCD.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_economics_budget.sql" />
+    <Build Include="stage\Views\v_prodview_joints_to_fluid.sql" />
+    <Build Include="dbo\Views\v_dim_due_date.sql" />
+    <Build Include="dbo\Views\v_dim_ITTest_Run.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_financial_xls.sql" />
+    <Build Include="dbo\Views\v_dim_date_accounting_leaseops.sql" />
+    <Build Include="stage\Views\v_rpt_insurance_election.sql" />
+    <Build Include="stage\Views\v_rpt_qb_latest_working_interest.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_payment_type.sql" />
+    <Build Include="STAGE_METRIX\Views\v_dim_source_metrix_well_tracts.sql" />
+    <Build Include="stage\Views\v_fact_source_fdc_valnav_volumes.sql" />
+    <Build Include="stage\Views\v_dim_source_entity_uwi_hierarchy_attributes.sql" />
+    <Build Include="STAGE_METRIX\Views\v_dim_source_metrix_charge_formula.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_source_facility.sql" />
+    <Build Include="stage\Views\v_stg_on_prod_dates.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_reserves_xls.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_control_group.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_royalties_budget.sql" />
+    <Build Include="stage\Views\v_ihs_attributes.sql" />
+    <Build Include="stage\Views\v_afe_cost_estimates_siteview.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_revenues_royalty_by_product_GLJReserves.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_economics_typecurves_final.sql" />
+    <Build Include="stage_valnav\Views\v_reserves_results_btax_product.sql" />
+    <Build Include="datamart_marketing\Views\v_uwis_by_sales_disposition_points.sql" />
+    <Build Include="dbo\Views\v_dim_date_spud.sql" />
+    <Build Include="stage\Views\v_fact_source_finance_budgets.sql" />
+    <Build Include="stage\Views\v_prodview_injection_volumes_incr.sql" />
+    <Build Include="stage\Views\v_qbyte_cost_centres_attributes.sql" />
+    <Build Include="stage_export\Views\v_Hierarchy_Attributes.sql" />
+    <Build Include="dbo\Views\v_dim_account_capital2.sql" />
+    <Build Include="data_mart_metrix\Views\v_fact_metrix_fees.sql" />
+    <Build Include="STAGE_METRIX\Views\v_metrix_unit_tracts.sql" />
+    <Build Include="stage\Views\v_fact_source_qbyte_incr.sql" />
+    <Build Include="STAGE_METRIX\Views\v_dim_source_metrix_control_groups.sql" />
+    <Build Include="stage\Views\v_qbyte_afe_project_justification_comments.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_delivery_sequence.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_target_facility.sql" />
+    <Build Include="stage\Views\v_prodview_injection_volumes.sql" />
+    <Build Include="dbo\Views\v_dim_scenario_finance.sql" />
+    <Build Include="stage\Views\v_stg_valnav_budget_ent_custom_field_def.sql" />
+    <Build Include="stage_ihs\Views\v_dim_accumap_operator.sql" />
+    <Build Include="stage\Views\v_fact_source_leaseops_valnav_volumes.sql" />
+    <Build Include="dbo\Views\v_dim_date_activity_leaseops.sql" />
+    <Build Include="stage\Views\v_fact_source_cost_actuals_qbyte.sql" />
+    <Build Include="stage\Views\v_ctrl_volumes_valanv_time_period.sql" />
+    <Build Include="dbo\Views\v_fact_finance.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_production_typecurves_final.sql" />
+    <Build Include="dbo\Views\v_fact_valnav_production.sql" />
+    <Build Include="stage\Views\v_prodview_shrink_yield_rates.sql" />
+    <Build Include="dbo\Views\v_dim_vnReserves_reserve_realized_date.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_reserves_typecurves_final.sql" />
+    <Build Include="stage\Views\v_wellview_source_cost_estimates.sql" />
+    <Build Include="dbo\Views\v_dim_valnav_gross_net.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_capital_budget.sql" />
+    <Build Include="stage\Views\v_acct_non_capital_expenditure.sql" />
+    <Build Include="dbo\Views\v_fact_VNreserves_financial.sql" />
+    <Build Include="stage\Views\v_stg_valnav_typecurves_ent_custom_field_def.sql" />
+    <Build Include="stage\Views\v_qbyte_source_cost_estimates.sql" />
+    <Build Include="dbo\Views\v_dim_date_cost_centre_terminated.sql" />
+    <Build Include="stage\Views\v_fact_source_powervision.sql" />
+    <Build Include="dbo\Views\v_dim_account_leaseops.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_well_counts_budget.sql" />
+    <Build Include="datamart_marketing\Views\v_stg_prodview_group_point_doi.sql" />
+    <Build Include="STAGE_METRIX\Views\v_dim_source_metrix_sales_type.sql" />
+    <Build Include="dbo\Views\v_fact_VNTypecurves_production.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_revenues_royalty_by_product_base_decline.sql" />
+    <Build Include="stage_csx\Views\v_rpt_service_agreement_fee_contract.sql" />
+    <Build Include="data_mart_metrix\Views\v_fact_metrix_royalty.sql" />
+    <Build Include="stage\Views\v_rpt_valnav_capital_actuals.sql" />
+    <Build Include="stage\Views\v_qbyte_cc_hierarchy.sql" />
+    <Build Include="dbo\Views\v_fact_leaseops_BCD.sql" />
+    <Build Include="stage\Views\v_prodview_downtime_hours_volumes_incr.sql" />
+    <Build Include="STAGE_METRIX\Views\v_fact_source_metrix_fees.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_charge_type.sql" />
+    <Build Include="stage_ihs\Views\v_dim_normalized_time.sql" />
+    <Build Include="STAGE_METRIX\Views\v_fact_source_metrix_fees_incr.sql" />
+    <Build Include="stage\Views\v_stg_prodview_volumes_incr.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_ar_contract.sql" />
+    <Build Include="STAGE_METRIX\Views\v_fact_source_metrix_royalty.sql" />
+    <Build Include="dbo\Views\v_dim_scenario_leaseops.sql" />
+    <Build Include="stage\Views\v_afenav_source_cost_estimates.sql" />
+    <Build Include="dbo\Views\v_fact_leaseops.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_royalties_GLJReserves.sql" />
+    <Build Include="dbo\Views\v_dim_date_accounting_finance.sql" />
+    <Build Include="stage\Views\v_qbyte_corp_hierarchy.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_production_typecurves.sql" />
+    <Build Include="stage\Views\v_dim_source_entity_valnav_entities.sql" />
+    <Build Include="dbo\Views\v_dim_valnav_activity_date.sql" />
+    <Build Include="dbo\Views\v_dim_scenario_capital.sql" />
+    <Build Include="dbo\Views\v_dim_invoice_number.sql" />
+    <Build Include="stage\Views\v_fact_source_cost_estimates_qbyte.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_financial_typecurves.sql" />
+    <Build Include="dbo\Views\v_dim_voucher_type.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_reserves_budget_final.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_lateral_length_budget.sql" />
+    <Build Include="dbo\Views\v_dim_valnav_scenario.sql" />
+    <Build Include="stage\Views\v_valnav_uwi_working_interest.sql" />
+    <Build Include="STAGE_METRIX\Views\v_dim_source_metrix_target_facility.sql" />
+    <Build Include="stage\Views\v_fact_source_leaseops_opex_accruals.sql" />
+    <Build Include="dbo\Views\v_dim_date_cost_centre_term.sql" />
+    <Build Include="stage\Views\v_fact_source_fdc_valnav_glj_production_volumes.sql" />
+    <Build Include="STAGE_METRIX\Views\v_metrix_unit_wells.sql" />
+    <Build Include="stage\Views\v_qbyte_authorization_for_expenditure_attributes.sql" />
+    <Build Include="dbo\Views\v_dim_valnav_current_prior_budget_scenario_source.sql" />
+    <Build Include="stage\Views\v_fact_source_cost_estimates_afenav.sql" />
+    <Build Include="STAGE_METRIX\Views\v_source_metrix_control_groups.sql" />
+    <Build Include="stage\Views\v_valnav_onstream_date_typecurves.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_capital_typecurves.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_royalty_payor.sql" />
+    <Build Include="dbo\Views\v_dim_voucher_number.sql" />
+    <Build Include="stage\Views\v_qbyte_account_hierarchy_source.sql" />
+    <Build Include="stage\Views\iv_cc_num_working_interest.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_expense_entity.sql" />
+    <Build Include="stage\Views\v_prodview_attributes.sql" />
+    <Build Include="stage\Views\v_valnav_typecurves_price_deck.sql" />
+    <Build Include="stage\Views\v_afe_cost_estimates_wellview.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_revenues_royalty_by_product_typecurves.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_sales_type.sql" />
+    <Build Include="stage\Views\v_fact_source_fdc_prodview_downtime.sql" />
+    <Build Include="dbo\Views\v_dim_account_capital.sql" />
+    <Build Include="stage\Views\v_valnav_dim_hierarchy_source.sql" />
+    <Build Include="dbo\Views\v_dim_invoice_date.sql" />
+    <Build Include="stage\Views\v_mds_source_bcd_cc_custom_groupings.sql" />
+    <Build Include="stage\Views\v_stg_valnav_reserves_ent_custom_field_def.sql" />
+    <Build Include="dbo\Views\v_dim_valnav_reserve_realized_date.sql" />
+    <Build Include="stage_export\Views\v_export_to_oplynxv6.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_facility.sql" />
+    <Build Include="dbo\Views\v_fact_valnav_reserves_BCD.sql" />
+    <Build Include="STAGE_METRIX\Views\v_dim_source_metrix_products.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_reserves_budget_ri.sql" />
+    <Build Include="STAGE_METRIX\Views\v_dim_source_metrix_owners.sql" />
+    <Build Include="stage\Views\v_fact_source_cost_estimates_siteview.sql" />
+    <Build Include="stage\Views\v_qbyte_vendors.sql" />
+    <Build Include="stage_valnav\Views\v_typecurves_result_id.sql" />
+    <Build Include="dbo\Views\v_dim_date_accounting_capital.sql" />
+    <Build Include="stage\Views\v_fact_source_fdc_prodview_injection_incr.sql" />
+    <Build Include="stage\Views\v_dim_source_entity_valnav_entities_GLJ.sql" />
+    <Build Include="dbo\Views\v_fact_capital.sql" />
+    <Build Include="stage\Views\v_qbyte_cc_bnp_divest_hierarchy.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_purchaser.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_economics_GLJreserves_final.sql" />
+    <Build Include="dbo\Views\v_fact_valnav_financial_BCD.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_production_budget_final.sql" />
+    <Build Include="dbo\Views\v_dim_valnav_account.sql" />
+    <Build Include="datamart_marketing\Views\v_stg_prodview_all_flownet_hierarchy.sql" />
+    <Build Include="stage\Views\v_rpt_wi_exception_qb_cs.sql" />
+    <Build Include="STAGE_METRIX\Views\v_fact_source_metrix_sales_incr.sql" />
+    <Build Include="stage\Views\v_prodview_allocated_volumes_incr.sql" />
+    <Build Include="stage_ihs\Views\v_dim_accumap_license.sql" />
+    <Build Include="stage\Views\v_stg_ihs_volumes.sql" />
+    <Build Include="dbo\Views\v_dim_invoice_type.sql" />
+    <Build Include="stage\Views\v_fact_source_opex_accrual_voucher_upload_detail.sql" />
+    <Build Include="stage\Views\iv_vendor_invoices.sql" />
+    <Build Include="stage\Views\v_prodview_proration_data_incr.sql" />
+    <Build Include="data_mart_metrix\Views\v_dim_royalty_type.sql" />
+    <Build Include="STAGE_METRIX\Views\v_dim_source_metrix_royalty_obligation_sequence.sql" />
+    <Build Include="dbo\Views\v_fact_volumes.sql" />
+    <Build Include="dbo\Views\v_fact_VNTypecurves_financial.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_reserves_GLJreserves.sql" />
+    <Build Include="stage_ihs\Views\v_dim_date_rig_on_production.sql" />
+    <Build Include="stage\Views\v_valnav_onstream_date_budget.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_economics_budget_final.sql" />
+    <Build Include="stage\Views\v_prodview_proration_data.sql" />
+    <Build Include="dbo\Views\v_dim_vnReserves_activity_date.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_reserve_adds_calculation.sql" />
+    <Build Include="dbo\Views\v_dim_date_rig_release.sql" />
+    <Build Include="stage\Views\v_fact_source_valnav_qbyte_working_interest.sql" />
+    <Build Include="dbo\Views\v_dim_organization.sql" />
+    <Build Include="stage\Views\v_valnav_onstream_date_reserves.sql" />
+    <Build Include="stage_valnav\Views\v_reserves_result_id.sql" />
+    <Build Include="dbo\Views\v_dim_date_activity_finance.sql" />
+    <Build Include="stage\Views\v_dim_source_scenario_finance.sql" />
+    <Build Include="stage_export\Views\v_ewf_wellbore_info.sql" />
+    <Build Include="Security\statsupdate.sql" />
+    <Build Include="Security\statsupdate_1.sql" />
+    <Build Include="Security\svc_ssrs.sql" />
+    <Build Include="Security\svc_ssrs_1.sql" />
+    <Build Include="Security\ssrs_readonly.sql" />
+    <Build Include="Security\ssrs_readonly_1.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="stage\Functions\TRIM.sql" />
+    <Build Include="stage\Functions\fn_Revised_Member_Text.sql" />
+    <Build Include="stage\Functions\InitCap.sql" />
+    <Build Include="stage\Functions\fn_Parse_acct_levels.sql" />
+    <Build Include="stage\Functions\LPAD.sql" />
+    <Build Include="stage\Functions\Translate.sql" />
+    <Build Include="dbo\Stored Procedures\spLoad_CTE_v_dim_source_scenario_finance_scenario_levels.sql" />
+    <Build Include="dbo\Stored Procedures\spMerge_t_dim_account_capital.sql" />
+    <Build Include="stage\Stored Procedures\merge_prodview_prorated_data.sql" />
+    <Build Include="dbo\Stored Procedures\usp_PopulateDimDate2.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_load_typecurves_daily.sql" />
+    <Build Include="data_mart\Stored Procedures\build_dim_account_finance.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_load_budget_financial_metrics.sql" />
+    <Build Include="data_mart\Stored Procedures\build_dim_organization.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_load_base_decline_financial_metrics.sql" />
+    <Build Include="data_mart\Stored Procedures\incremental_t_fact_leaseops_opex_accruals.sql" />
+    <Build Include="data_mart\Stored Procedures\build_dim_entity_valnav.sql" />
+    <Build Include="data_mart\Stored Procedures\build_dim_entity_valnav_GLJ.sql" />
+    <Build Include="stage\Stored Procedures\merge_incr_ihs_well_node.sql" />
+    <Build Include="data_mart\Stored Procedures\incremental_gl_facts.sql" />
+    <Build Include="data_mart\Stored Procedures\build_dim_account_hierarchy.sql" />
+    <Build Include="data_mart\Stored Procedures\build_dim_vendor.sql" />
+    <Build Include="data_mart_metrix\Stored Procedures\build_dim_purchaser_sequence.sql" />
+    <Build Include="data_mart_metrix\Stored Procedures\build_dim_delivery_sequence.sql" />
+    <Build Include="data_mart_metrix\Stored Procedures\full_metrix_fees_facts.sql" />
+    <Build Include="stage\Stored Procedures\load_fact_source_qbyte_working_interest.sql" />
+    <Build Include="data_mart\Stored Procedures\full_ihs_fdc_facts.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_load_budget_reserves_metrics.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_archive_basedecline_data.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_Revised_child_alias.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_Parse_Hierarchy_Path.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_load_typecurves_financial_metrics.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_Revised_major_account_description.sql" />
+    <Build Include="data_mart\Stored Procedures\build_dim_authorization_for_expenditure.sql" />
+    <Build Include="data_mart\Stored Procedures\sp_metrix_participant_availables_incr_find_current_month.sql" />
+    <Build Include="data_mart\Stored Procedures\incremental_prodview_fdc_facts.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_archive_typecurves_data.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_load_budget_production_metrics.sql" />
+    <Build Include="data_mart\Stored Procedures\usp_PopulateDimDate.sql" />
+    <Build Include="data_mart\Stored Procedures\incremental_qbyte_fdc_facts.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_View_v_qbyte_account_hierarchy_source_finance.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_Parse_sort_key.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_Revised_Hierarchy_Path.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_Parse_scenario_sort_key.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_load_calculated_reserve_adds.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_View_v_qbyte_account_hierarchy_source.sql" />
+    <Build Include="data_mart\Stored Procedures\incremental_prodview_downtime_facts.sql" />
+    <Build Include="Stage_CashReceipts\Stored Procedures\Update_PA_Splits_Current.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_Revised_account_description.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_View_v_dim_valnav_scenario_BCD_cur_prior.sql" />
+    <Build Include="data_mart\Stored Procedures\sp_metrix_royalty_splits_incr_find_current_month.sql" />
+    <Build Include="data_mart\Stored Procedures\full_ap_ar_open_facts.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_Revised_child_id.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_Revised_gl_account_description.sql" />
+    <Build Include="data_mart\Stored Procedures\full_prodview_downtime_facts.sql" />
+    <Build Include="data_mart\Stored Procedures\refresh_valnav_actuals.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_Revised_parent_id.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_archive_budget_data.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_load_GLJ_financial.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_Revised_scenario_sort_key.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_View_v_dim_valnav_current_prior_budget_scenario_source.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_t_ctrl_Revised_account_description.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_Revised_sort_key.sql" />
+    <Build Include="data_mart\Stored Procedures\full_ap_ar_facts.sql" />
+    <Build Include="maintenance\Stored Procedures\rebuild_indexes.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_Revised_class_code_description.sql" />
+    <Build Include="maintenance\Stored Procedures\update_all_db_statistics.sql" />
+    <Build Include="data_mart\Stored Procedures\Get_lst_upd_dt_For_qbyte_vouchers.sql" />
+    <Build Include="data_mart\Stored Procedures\sp_metrix_partner_op_battery_txns_incr_find_current_month.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_load_typecurves_production_metrics.sql" />
+    <Build Include="data_mart\Stored Procedures\sp_metrix_sales_details_incr_find_current_month.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_load_GLJ_reserves.sql" />
+    <Build Include="data_mart\Stored Procedures\align_entities_to_qbyte_cc.sql" />
+    <Build Include="data_mart\Stored Procedures\full_qbyte_fdc_facts.sql" />
+    <Build Include="data_mart\Stored Procedures\build_prodview_downtime_scenario.sql" />
+    <Build Include="data_mart\Stored Procedures\full_valnav_reserves_forecast_fdc_facts.sql" />
+    <Build Include="data_mart\Stored Procedures\full_afe_facts.sql" />
+    <Build Include="data_mart\Stored Procedures\build_dim_entity.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_load_base_decline_production_metrics.sql" />
+    <Build Include="data_mart\Stored Procedures\full_prodview_fdc_facts.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_View_v_dim_valnav_scenario_BCD_var.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_load_booked_reserves.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_load_typecurves_reserves_metrics.sql" />
+    <Build Include="data_mart\Stored Procedures\valnav_load_GLJ_production.sql" />
+    <Build Include="data_mart\Stored Procedures\LoadData_For_View_v_dim_valnav_scenario_BCD_wbud.sql" />
+    <Build Include="data_mart\Stored Procedures\full_valnav_fdc_facts.sql" />
+    <Build Include="stage\Stored Procedures\merge_prodview_prorated_data_incr.sql" />
+    <Build Include="data_mart\Stored Procedures\incremental_ihs_fdc_facts.sql" />
+    <Build Include="data_mart\Stored Procedures\full_valnav_fdc_facts_daily.sql" />
+    <Build Include="data_mart_metrix\Stored Procedures\incr_metrix_sales_facts.sql" />
+    <Build Include="data_mart_metrix\Stored Procedures\build_dim_ar_contract.sql" />
+    <Build Include="data_mart_metrix\Stored Procedures\incr_metrix_fees_facts.sql" />
+    <Build Include="stage\Stored Procedures\merge_incr_ihs_pden_vol_by_month.sql" />
+    <Build Include="data_mart_metrix\Stored Procedures\usp_PopulateDimDate.sql" />
+    <Build Include="data_mart_metrix\Stored Procedures\full_metrix_royalty_facts.sql" />
+    <Build Include="data_mart_metrix\Stored Procedures\incr_metrix_royalty_facts.sql" />
+    <Build Include="data_mart_metrix\Stored Procedures\full_metrix_sales_facts.sql" />
+    <Build Include="data_mart_metrix\Stored Procedures\build_dim_well.sql" />
+    <Build Include="datamart_marketing\Stored Procedures\marketing_etl.sql" />
+    <Build Include="datamart_marketing\Stored Procedures\marketing_etl_salespoints_ALL.sql" />
+    <Build Include="Mktg_ReportLoads\Stored Procedures\merge_portfolio_pricing_xls.sql" />
+    <Build Include="OLAPControl\Stored Procedures\usp_Run_Start_Job.sql" />
+    <Build Include="OLAPControl\Stored Procedures\usp_Run_End_Job.sql" />
+    <Build Include="OLAPControl\Stored Procedures\usp_Run_Task_Info.sql" />
+    <Build Include="stage\Stored Procedures\load_fact_source_fdc_prodview_incr.sql" />
+    <Build Include="stage\Stored Procedures\merge_incr_ihs_pden_production_month.sql" />
+    <Build Include="stage\Stored Procedures\sp_update_siteview_vendor_id.sql" />
+    <Build Include="stage\Stored Procedures\load_t_stg_prodview_volumes.sql" />
+    <Build Include="stage\Stored Procedures\sp_Parse_acct_levels.sql" />
+    <Build Include="OLAPControl\Stored Procedures\usp_Run_Start_Job_Log.sql" />
+    <Build Include="stage\Stored Procedures\LoadData_For_t_qbyte_cost_centre_revised_desc.sql" />
+    <Build Include="OLAPControl\Stored Procedures\usp_Run_Util.sql" />
+    <Build Include="stage\Stored Procedures\update_to_add_on_cost_centre_info.sql" />
+    <Build Include="OLAPControl\Stored Procedures\usp_Run_End_Job_Log.sql" />
+    <Build Include="stage\Stored Procedures\load_t_stg_prodview_volumes_incr.sql" />
+    <Build Include="OLAPControl\Stored Procedures\usp_Run_Task_Info_Log.sql" />
+    <Build Include="stage\Stored Procedures\merge_incr_line_items.sql" />
+    <Build Include="stage\Stored Procedures\load_v_ctrl_volumes_valanv_time_period_CTE.sql" />
+    <Build Include="stage\Stored Procedures\spLoad_CTE_v_dim_scenario_leaseops_BCD_CUR_PRIOR_CTE.sql" />
+    <Build Include="stage\Stored Procedures\sp_update_wellview_vendor_id.sql" />
+    <Build Include="stage\Stored Procedures\spLoad_CTE_v_valnav_netback_accounts.sql" />
+    <Build Include="stage\Stored Procedures\spLoad_CTE_v_dim_scenario_leaseops_BCD.sql" />
+    <Build Include="stage\Stored Procedures\load_fact_source_fdc_prodview.sql" />
+    <Build Include="stage\Stored Procedures\update_prodview_duplicates_ctrl.sql" />
+    <Build Include="stage\Stored Procedures\update_ctrl_special_accounts.sql" />
+    <Build Include="stage\Stored Procedures\Revised_Member_Text.sql" />
+    <Build Include="stage\Stored Procedures\LoadData_For_t_qbyte_account_hierarchy_source_finance_revised_desc.sql" />
+    <Build Include="stage\Stored Procedures\Revised_Member_Text_Account_Finance.sql" />
+    <Build Include="stage\Stored Procedures\merge_incr_vouchers.sql" />
+    <Build Include="stage\Stored Procedures\Revised_Member_Text_Special_Accounts_Finance.sql" />
+    <Build Include="Stage_CashReceipts\Stored Procedures\Update_PA_Splits_History.sql" />
+    <Build Include="Stage_CashReceipts\Stored Procedures\merge_Detail_Line_Items_ARAR.sql" />
+    <Build Include="stage_ihs\Stored Procedures\full_accumap_facts.sql" />
+    <Build Include="stage_ihs\Stored Procedures\load_accumap_full_volumes.sql" />
+    <Build Include="stage_prodview\Stored Procedures\merge_t_pvt_pvunitdispmonthday_incr.sql" />
+    <Build Include="dbo\Stored Procedures\cleanAcount.sql" />
+    <Build Include="dbo\Stored Procedures\FillMonthList.sql" />
+    <Build Include="dbo\Stored Procedures\getDimSneraio.sql" />
+    <Build Include="dbo\Stored Procedures\LastRowCount.sql" />
+    <Build Include="dbo\Stored Procedures\p1.sql" />
+    <Build Include="Security\ADFCopyGeneratedCredential_961e73ce-19f0-472c-a479-e8ea1b1499eb.sql" />
+    <Build Include="Security\BNPBASEDECLINESCOPY.sql" />
+    <Build Include="Security\BNPBUDGETSCOPY.sql" />
+    <Build Include="Security\BNPRESERVESCOPY.sql" />
+    <Build Include="Security\BNPTYPECURVESCOPY.sql" />
+    <Build Include="Security\data_mart.sql" />
+    <Build Include="Security\data_mart_metrix.sql" />
+    <Build Include="Security\datamart_marketing.sql" />
+    <Build Include="Security\maintenance.sql" />
+    <Build Include="Security\marketing.sql" />
+    <Build Include="Security\Mktg_ReportLoads.sql" />
+    <Build Include="Security\OLAPControl.sql" />
+    <Build Include="Security\pv30_prodcopy.sql" />
+    <Build Include="Security\stage.sql" />
+    <Build Include="Security\Stage_CashReceipts.sql" />
+    <Build Include="Security\stage_csx.sql" />
+    <Build Include="Security\stage_csx_csland.sql" />
+    <Build Include="Security\stage_export.sql" />
+    <Build Include="Security\stage_ihs.sql" />
+    <Build Include="Security\stage_mds.sql" />
+    <Build Include="Security\STAGE_METRIX.sql" />
+    <Build Include="Security\STAGE_METRIX_METRIX.sql" />
+    <Build Include="Security\stage_prodview.sql" />
+    <Build Include="Security\stage_valnav.sql" />
+    <Build Include="External Resources\ADFCopyGeneratedDataSource_0e8a63ba-1642-4f4d-b0c5-6aefc9ed1c9b.sql" />
+    <Build Include="External Resources\ADFCopyGeneratedFileFormat_3bc100bd-554b-40d9-9a55-0c8a570a5c6a.sql" />
+    <Build Include="dbo\External Tables\ADFCopyGeneratedExternalTable_41cb5967-a8fe-487d-b088-7e2a15ecbbd6.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+  </ItemGroup>
+</Project>

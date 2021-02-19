@@ -1,0 +1,26 @@
+﻿CREATE TABLE [stage_csx_csland].[C_BASE] (
+    [FILE_NUMBER]      CHAR (10)    NOT NULL,
+    [ADMIN_COMPANY]    CHAR (10)    NOT NULL,
+    [CONTRACT_NAME]    VARCHAR (90) NULL,
+    [FILE_STATUS]      CHAR (10)    NULL,
+    [STATUS_DATE]      DATE         NULL,
+    [CONTRACT_TYPE]    CHAR (10)    NOT NULL,
+    [CONTRACT_DATE]    DATE         NOT NULL,
+    [EFFECTIVE_DATE]   DATE         NULL,
+    [REVISION_NUMBER]  VARCHAR (6)  NULL,
+    [REVISION_DATE]    DATE         NULL,
+    [UNIT_OPERATOR]    CHAR (6)     NULL,
+    [UNIT_CODE]        CHAR (20)    NULL,
+    [PREV_DOC_NUMBER]  VARCHAR (20) NULL,
+    [TERMINATION_DATE] DATE         NULL,
+    [TERM]             CHAR (10)    NULL,
+    [TERM_NOTICE]      CHAR (10)    NULL,
+    [PRODUCER]         CHAR (6)     NULL,
+    [PROCESSOR]        CHAR (6)     NULL,
+    [ROFR]             VARCHAR (1)  NULL,
+    [ASSIGNMENT]       VARCHAR (1)  NULL,
+    [ASSIGNMENT_TERMS] VARCHAR (1)  NULL,
+    [SEGREGATION]      VARCHAR (1)  NOT NULL
+)
+WITH (CLUSTERED COLUMNSTORE INDEX, DISTRIBUTION = ROUND_ROBIN);
+

@@ -1,0 +1,24 @@
+﻿CREATE TABLE [stage].[t_ihs_field] (
+    [FIELD_ID]           VARCHAR (20)   NULL,
+    [ACTIVE_IND]         VARCHAR (1)    NULL,
+    [COUNTRY]            VARCHAR (20)   NULL,
+    [DISCOVERY_DATE]     DATETIME       NULL,
+    [DISTRICT]           VARCHAR (20)   NULL,
+    [EFFECTIVE_DATE]     DATETIME       NULL,
+    [EXPIRY_DATE]        DATETIME       NULL,
+    [FIELD_ABBREVIATION] VARCHAR (20)   NULL,
+    [FIELD_NAME]         VARCHAR (60)   NULL,
+    [FIELD_TYPE]         VARCHAR (20)   NULL,
+    [GROUP_FIELD_ID]     VARCHAR (20)   NULL,
+    [PPDM_GUID]          VARCHAR (38)   NULL,
+    [PROVINCE_STATE]     VARCHAR (20)   NULL,
+    [REMARK]             VARCHAR (2000) NULL,
+    [SOURCE]             VARCHAR (20)   NULL,
+    [ROW_CHANGED_BY]     VARCHAR (30)   NULL,
+    [ROW_CHANGED_DATE]   DATETIME       NULL,
+    [ROW_CREATED_BY]     VARCHAR (30)   NULL,
+    [ROW_CREATED_DATE]   DATETIME       NULL,
+    [ROW_QUALITY]        VARCHAR (20)   NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

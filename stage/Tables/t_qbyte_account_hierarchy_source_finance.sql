@@ -1,0 +1,32 @@
+﻿CREATE TABLE [stage].[t_qbyte_account_hierarchy_source_finance] (
+    [child_id]                  VARCHAR (500)   NULL,
+    [parent_id]                 VARCHAR (500)   NULL,
+    [child_alias]               VARCHAR (4000)  NULL,
+    [parent_alias]              VARCHAR (4000)  NULL,
+    [gl_account]                VARCHAR (50)    NULL,
+    [gl_account_description]    VARCHAR (4000)  NULL,
+    [major_account]             VARCHAR (4)     NULL,
+    [minor_account]             VARCHAR (4)     NULL,
+    [major_account_description] VARCHAR (500)   NULL,
+    [major_class_code]          VARCHAR (50)    NULL,
+    [class_code_description]    VARCHAR (100)   NULL,
+    [product_code]              VARCHAR (50)    NULL,
+    [si_to_imp_conv_factor]     VARCHAR (50)    NULL,
+    [boe_thermal]               VARCHAR (50)    NULL,
+    [mcfe6_thermal]             VARCHAR (50)    NULL,
+    [product_description]       VARCHAR (100)   NULL,
+    [account_group]             VARCHAR (50)    NULL,
+    [display_sequence_number]   VARCHAR (4)     NULL,
+    [gross_or_net_code]         VARCHAR (25)    NULL,
+    [sort_key]                  VARCHAR (508)   NOT NULL,
+    [is_leaseops]               VARCHAR (1)     NOT NULL,
+    [is_capital]                VARCHAR (1)     NOT NULL,
+    [is_valnav]                 VARCHAR (1)     NOT NULL,
+    [is_finance]                VARCHAR (1)     NOT NULL,
+    [zero_level]                INT             NULL,
+    [Hierarchy_Path]            NVARCHAR (1000) NULL,
+    [Hierarchy_Path_desc]       NVARCHAR (1000) NULL,
+    [level]                     INT             NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

@@ -1,0 +1,22 @@
+﻿CREATE TABLE [stage].[t_stg_opex_volumes_budget_dly_facts] (
+    [DATA_SOURCE]  VARCHAR (30)     NULL,
+    [SCENARIO]     VARCHAR (50)     NULL,
+    [BUDGET_GROUP] VARCHAR (100)    NULL,
+    [PRODUCT]      VARCHAR (50)     NULL,
+    [GRS_NET_FLAG] VARCHAR (10)     NULL,
+    [BUDGET_YEAR]  VARCHAR (4)      NULL,
+    [JANUARY]      NUMERIC (18, 10) NULL,
+    [FEBRUARY]     NUMERIC (18, 10) NULL,
+    [MARCH]        NUMERIC (18, 10) NULL,
+    [APRIL]        NUMERIC (18, 10) NULL,
+    [MAY]          NUMERIC (18, 10) NULL,
+    [JUNE]         NUMERIC (18, 10) NULL,
+    [JULY]         NUMERIC (18, 10) NULL,
+    [AUGUST]       NUMERIC (18, 10) NULL,
+    [SEPTEMBER]    NUMERIC (18, 10) NULL,
+    [OCTOBER]      NUMERIC (18, 10) NULL,
+    [NOVEMBER]     NUMERIC (18, 10) NULL,
+    [DECEMBER]     NUMERIC (18, 10) NULL
+)
+WITH (CLUSTERED COLUMNSTORE INDEX, DISTRIBUTION = ROUND_ROBIN);
+

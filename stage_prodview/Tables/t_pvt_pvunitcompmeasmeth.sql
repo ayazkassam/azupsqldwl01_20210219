@@ -1,0 +1,31 @@
+﻿CREATE TABLE [stage_prodview].[t_pvt_pvunitcompmeasmeth] (
+    [idflownet]            VARCHAR (32)   NOT NULL,
+    [idrecparent]          VARCHAR (32)   NULL,
+    [idrec]                VARCHAR (32)   NOT NULL,
+    [dttmstart]            DATETIME       NULL,
+    [flowdirection]        VARCHAR (20)   NULL,
+    [methodgas]            VARCHAR (50)   NULL,
+    [idrecnodegas]         VARCHAR (32)   NULL,
+    [idrecnodegastk]       VARCHAR (26)   NULL,
+    [methodhcliq]          VARCHAR (50)   NULL,
+    [idrecnodehcliq]       VARCHAR (32)   NULL,
+    [idrecnodehcliqtk]     VARCHAR (26)   NULL,
+    [methodwater]          VARCHAR (50)   NULL,
+    [idrecnodewater]       VARCHAR (32)   NULL,
+    [idrecnodewatertk]     VARCHAR (26)   NULL,
+    [idrecnodecasinggas]   VARCHAR (32)   NULL,
+    [idrecnodecasinggastk] VARCHAR (26)   NULL,
+    [com]                  VARCHAR (2000) NULL,
+    [syslockmeui]          SMALLINT       NULL,
+    [syslockchildrenui]    SMALLINT       NULL,
+    [syslockme]            SMALLINT       NULL,
+    [syslockchildren]      SMALLINT       NULL,
+    [syslockdate]          DATETIME       NULL,
+    [sysmoddate]           DATETIME       NULL,
+    [sysmoduser]           VARCHAR (50)   NULL,
+    [syscreatedate]        DATETIME       NULL,
+    [syscreateuser]        VARCHAR (50)   NULL,
+    [systag]               VARCHAR (255)  NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

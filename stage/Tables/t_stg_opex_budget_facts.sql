@@ -1,0 +1,24 @@
+﻿CREATE TABLE [stage].[t_stg_opex_budget_facts] (
+    [DATA_SOURCE]  VARCHAR (30)    NULL,
+    [SCENARIO]     VARCHAR (50)    NULL,
+    [BUDGET_GROUP] VARCHAR (100)   NULL,
+    [MAJOR_ACCT]   VARCHAR (11)    NULL,
+    [MINOR_ACCT]   VARCHAR (11)    NULL,
+    [MEASURE]      VARCHAR (50)    NULL,
+    [GRS_NET_FLAG] VARCHAR (11)    NULL,
+    [BUDGET_YEAR]  VARCHAR (4)     NULL,
+    [JANUARY]      NUMERIC (18, 5) NULL,
+    [FEBRUARY]     NUMERIC (18, 5) NULL,
+    [MARCH]        NUMERIC (18, 5) NULL,
+    [APRIL]        NUMERIC (18, 5) NULL,
+    [MAY]          NUMERIC (18, 5) NULL,
+    [JUNE]         NUMERIC (18, 5) NULL,
+    [JULY]         NUMERIC (18, 5) NULL,
+    [AUGUST]       NUMERIC (18, 5) NULL,
+    [SEPTEMBER]    NUMERIC (18, 5) NULL,
+    [OCTOBER]      NUMERIC (18, 5) NULL,
+    [NOVEMBER]     NUMERIC (18, 5) NULL,
+    [DECEMBER]     NUMERIC (18, 5) NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

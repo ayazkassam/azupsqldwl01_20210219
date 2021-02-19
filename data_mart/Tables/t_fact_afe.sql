@@ -1,0 +1,33 @@
+﻿CREATE TABLE [data_mart].[t_fact_afe] (
+    [transaction_pk]             NVARCHAR (200) NULL,
+    [afe_id]                     INT            NULL,
+    [afe_number]                 NVARCHAR (50)  NULL,
+    [activity_period_id]         INT            NULL,
+    [accounting_period_id]       INT            NULL,
+    [entity_id]                  INT            NULL,
+    [cc_number]                  NVARCHAR (20)  NULL,
+    [uwi]                        NVARCHAR (75)  NULL,
+    [gl_account]                 NVARCHAR (50)  NULL,
+    [afe_type]                   NVARCHAR (150) NULL,
+    [afe_job_type]               NUMERIC (18)   NULL,
+    [afe_job_status]             NUMERIC (18)   NULL,
+    [org_ba_id]                  NVARCHAR (50)  NULL,
+    [scenario]                   NVARCHAR (50)  NULL,
+    [data_source]                NVARCHAR (20)  NULL,
+    [vendor_ba_id]               NVARCHAR (50)  NULL,
+    [gross_net_indicator]        NVARCHAR (20)  NULL,
+    [project_id]                 NVARCHAR (30)  NULL,
+    [budget_wedge_id]            NVARCHAR (80)  NULL,
+    [head_count]                 FLOAT (53)     NULL,
+    [duration_of_work]           FLOAT (53)     NULL,
+    [number_of_reports]          FLOAT (53)     NULL,
+    [number_of_permits]          FLOAT (53)     NULL,
+    [cdn_dollars]                FLOAT (53)     NULL,
+    [us_dollars]                 FLOAT (53)     NULL,
+    [net_working_interest]       FLOAT (53)     NULL,
+    [transaction_last_load_id]   NUMERIC (18)   NULL,
+    [transaction_last_load_date] DATETIME       NULL,
+    [etl_status]                 NVARCHAR (1)   NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

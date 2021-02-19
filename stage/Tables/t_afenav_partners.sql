@@ -1,0 +1,22 @@
+﻿CREATE TABLE [stage].[t_afenav_partners] (
+    [DOCUMENT_ID]    NVARCHAR (50)  NOT NULL,
+    [VERSION]        INT            NOT NULL,
+    [PARTNERID]      INT            NOT NULL,
+    [COMNAME]        NVARCHAR (500) NOT NULL,
+    [CODE]           NVARCHAR (50)  NULL,
+    [COMNAMESHORT]   NVARCHAR (100) NULL,
+    [CONTACT]        NVARCHAR (100) NULL,
+    [STRADDRESS]     NVARCHAR (200) NULL,
+    [CITY]           NVARCHAR (100) NULL,
+    [PROVINCE_STATE] NVARCHAR (100) NULL,
+    [POSTCODE_ZIP]   NVARCHAR (100) NULL,
+    [AREACODE]       NVARCHAR (100) NULL,
+    [EMAIL]          NVARCHAR (100) NULL,
+    [PHONE]          NVARCHAR (100) NULL,
+    [FAX]            NVARCHAR (100) NULL,
+    [COUNTRY]        NVARCHAR (100) NULL,
+    [ACTIVE]         TINYINT        NOT NULL,
+    [AFFILIATE]      TINYINT        NOT NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

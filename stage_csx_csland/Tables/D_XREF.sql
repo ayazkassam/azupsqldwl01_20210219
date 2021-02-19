@@ -1,0 +1,18 @@
+﻿CREATE TABLE [stage_csx_csland].[D_XREF] (
+    [ADMIN_COMPANY]  VARCHAR (4)  NOT NULL,
+    [SUBSYSTEM]      VARCHAR (1)  NOT NULL,
+    [FILE_NUMBER]    CHAR (10)    NOT NULL,
+    [FILE_SUB]       CHAR (2)     NOT NULL,
+    [CHANGED_DATE]   DATE         NOT NULL,
+    [DOI_TYPE]       CHAR (10)    NOT NULL,
+    [DOI_STATUS]     VARCHAR (1)  NULL,
+    [ACCOUNT_GROUP]  CHAR (10)    NOT NULL,
+    [DOI_ID]         NUMERIC (7)  NOT NULL,
+    [EFFECTIVE_DATE] DATE         NOT NULL,
+    [EXPIRY_DATE]    DATE         NOT NULL,
+    [OWNER]          VARCHAR (1)  NOT NULL,
+    [COMMENTS]       VARCHAR (60) NULL,
+    [OCCURRENCE]     NUMERIC (6)  NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

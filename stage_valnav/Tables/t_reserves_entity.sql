@@ -1,0 +1,9 @@
+﻿CREATE TABLE [stage_valnav].[t_reserves_entity] (
+    [OBJECT_ID]    NVARCHAR (50)  NOT NULL,
+    [UNIQUE_ID]    NVARCHAR (100) NOT NULL,
+    [FORMATTED_ID] NVARCHAR (100) NULL,
+    [SORTING_ID]   NVARCHAR (100) NULL,
+    [ENTITY_TYPE]  INT            NOT NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+

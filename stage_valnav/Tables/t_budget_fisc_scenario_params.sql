@@ -1,0 +1,31 @@
+﻿CREATE TABLE [stage_valnav].[t_budget_fisc_scenario_params] (
+    [OBJECT_ID]                 NVARCHAR (50) NOT NULL,
+    [PARENT_ID]                 NVARCHAR (50) NOT NULL,
+    [PLAN_ID]                   NVARCHAR (50) NOT NULL,
+    [ENABLE_ABANDONMENT]        TINYINT       NULL,
+    [ENABLE_SASK_SURCHARGE]     TINYINT       NULL,
+    [ENABLE_ECON_LIMIT]         TINYINT       NULL,
+    [ESCALATE_PRICE]            TINYINT       NULL,
+    [PRICE_DECK_ID]             NVARCHAR (50) NULL,
+    [CAP_COST_TEMPLATE_ID]      NVARCHAR (50) NULL,
+    [OP_COST_TEMPLATE_ID]       NVARCHAR (50) NULL,
+    [PRICE_TEMPLATE_ID]         NVARCHAR (50) NULL,
+    [COS_OVERRIDE]              FLOAT (53)    NULL,
+    [COO_OVERRIDE]              FLOAT (53)    NULL,
+    [PRICE_FACTOR]              FLOAT (53)    NULL,
+    [OP_COST_FACTOR]            FLOAT (53)    NULL,
+    [CAP_COST_FACTOR]           FLOAT (53)    NULL,
+    [PRODUCTION_FACTOR]         FLOAT (53)    NULL,
+    [REFERENCE_DATE]            DATETIME2 (7) NULL,
+    [DISCOUNT_DATE]             DATETIME2 (7) NULL,
+    [INFLATION_OVERRIDE]        FLOAT (53)    NULL,
+    [USE_OVERLAPPING_HISTORY]   TINYINT       NULL,
+    [ECON_LIMIT_DISCOUNT]       INT           NULL,
+    [ECON_LIMIT_CALC_TYPE]      INT           NULL,
+    [ALLOW_NEG_WEDGE]           TINYINT       NULL,
+    [CAP_ACT_ECON_CALC_OPT]     INT           NULL,
+    [ECON_LIMIT_DELAY]          INT           NULL,
+    [ENABLE_SHARED_CALCULATION] TINYINT       NULL
+)
+WITH (HEAP, DISTRIBUTION = ROUND_ROBIN);
+
